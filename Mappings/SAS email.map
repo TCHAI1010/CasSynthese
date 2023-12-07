@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_dv0-oJAiEe69cu6-bNESsg" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_eb7PoJAiEe69cu6-bNESsg" alias="SAS_FILESRC" dataset="_pK_aaJAiEe69cu6-bNESsg" ref="resource.md#_j44gNJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_FILESRC?">
+    <field id="_eb7PrZAiEe69cu6-bNESsg" name="F11" ref="resource.md#_j8QkkpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F11?"/>
+    <field id="_eb7PqJAiEe69cu6-bNESsg" name="F6" ref="resource.md#_j8QkdJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F6?"/>
+    <field id="_eb7Pr5AiEe69cu6-bNESsg" name="F13" ref="resource.md#_j8QknpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F13?"/>
+    <field id="_eb7PpZAiEe69cu6-bNESsg" fullAlias="F3" name="F3" ref="resource.md#_j8QkYpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F3?"/>
+    <field id="_eb7PppAiEe69cu6-bNESsg" fullAlias="F4" name="F4" ref="resource.md#_j8QkaJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F4?"/>
+    <field id="_eb7PrpAiEe69cu6-bNESsg" name="F12" ref="resource.md#_j8QkmJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F12?"/>
+    <field id="_eb7PqpAiEe69cu6-bNESsg" name="F8" ref="resource.md#_j8QkgJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
+    <field id="_eb7PpJAiEe69cu6-bNESsg" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
+    <field id="_eb7PsJAiEe69cu6-bNESsg" name="DATE_IMPORT" ref="resource.md#_j8QkpJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <field id="_eb7Po5AiEe69cu6-bNESsg" fullAlias="F1" name="F1" ref="resource.md#_j8QkVpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F1?"/>
+    <field id="_eb7Pp5AiEe69cu6-bNESsg" fullAlias="F5" name="F5" ref="resource.md#_j8QkbpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F5?"/>
+    <field id="_eb7PopAiEe69cu6-bNESsg" fullAlias="FILE_NOM" name="FILE_NOM" ref="resource.md#_j8QkUJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FILE_NOM?"/>
+    <field id="_eb7Pq5AiEe69cu6-bNESsg" name="F9" ref="resource.md#_j8QkhpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F9?"/>
+    <field id="_eb7PqZAiEe69cu6-bNESsg" name="F7" ref="resource.md#_j8QkepAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
+    <field id="_eb7PrJAiEe69cu6-bNESsg" name="F10" ref="resource.md#_j8QkjJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F10?"/>
+  </datastore>
+  <datastore id="_e_VesJAiEe69cu6-bNESsg" alias="SAS_EMAIL" control="true" dataset="_e_fPtJAiEe69cu6-bNESsg" ref="resource.md#_jzfp-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_EMAIL?" subExpression="[A]">
+    <field id="_e_Ves5AiEe69cu6-bNESsg" enable="true" insert="true" name="EMAIL" ref="resource.md#_j4uvNpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=EMAIL?" update="true">
+      <expression id="_h2i8YZAiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>SAS_FILESRC.F4</expression>
+      </expression>
+    </field>
+    <field id="_e_VespAiEe69cu6-bNESsg" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_j4uvMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_CLIENT?" update="true" updateKey="true">
+      <expression id="_h2i8Y5AiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>SAS_FILESRC.F3</expression>
+      </expression>
+    </field>
+    <field id="_e_VetpAiEe69cu6-bNESsg" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_j4uvQpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_h2i8ZJAiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>SOURCE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_e_Vet5AiEe69cu6-bNESsg" enable="true" insert="true" name="DATE_IMPORT" ref="resource.md#_j4uvR5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?" update="true">
+      <expression id="_h2i8ZZAiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>SOURCE.DATE_IMPORT</expression>
+      </expression>
+    </field>
+    <field id="_e_VetZAiEe69cu6-bNESsg" enable="true" insert="true" name="STATUS_EMAIL" ref="resource.md#_j4uvPJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS_EMAIL?" update="true">
+      <expression id="_h2i8ZpAiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>TRANSCO_status.LIBELLE</expression>
+      </expression>
+    </field>
+    <constraint id="_wq5SwZAoEe69cu6-bNESsg" name="PK_CLE_CLIENT2" ref="resource.md#_j44gMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT2?" reject="true"/>
+    <constraint id="_wq550JAoEe69cu6-bNESsg" name="FK_CLE_CLIENT2" ref="resource.md#_uoFi8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT2?" reject="true"/>
+    <constraint id="_wq550ZAoEe69cu6-bNESsg" name="FK_ID_FICHIER2" ref="resource.md#_uoE74JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2?" reject="true"/>
+    <constraint id="_jHB5vZAuEe69cu6-bNESsg" name="REJET_EMAIL" ref="resource.md#_ohz5gZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=REJET_EMAIL?" reject="true"/>
+    <setDescriptor id="_h2i8YJAiEe69cu6-bNESsg" label="A"/>
+  </datastore>
+  <datastore id="_pK_aYJAiEe69cu6-bNESsg" alias="TRANSCO_status" dataset="_pK_aaJAiEe69cu6-bNESsg" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
+    <field id="_pK_aYpAiEe69cu6-bNESsg" fullAlias="TYPE" name="TYPE" ref="resource.md#_jo15EJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
+    <field id="_pK_aZJAiEe69cu6-bNESsg" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_jo15HJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
+    <field id="_pK_aY5AiEe69cu6-bNESsg" fullAlias="CODE" name="CODE" ref="resource.md#_jo15FpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
+  </datastore>
+  <datastore id="_9k5SwJAiEe69cu6-bNESsg" alias="SOURCE" dataset="_pK_aaJAiEe69cu6-bNESsg" ref="resource.md#_jo7_sZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SOURCE?">
+    <field id="_9k5SxJAiEe69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_juUO-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <field id="_9k5SwpAiEe69cu6-bNESsg" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_juUO8JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" updateKey="true"/>
+    <field id="_9k5Sw5AiEe69cu6-bNESsg" fullAlias="NOM_FICHIER" name="NOM_FICHIER" ref="resource.md#_juUO9ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM_FICHIER?"/>
+    <constraint id="_wNRioJAoEe69cu6-bNESsg" name="PK_ID_FICHIER" ref="resource.md#_jua8oJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_ID_FICHIER?" reject="true"/>
+  </datastore>
+  <join id="_rVJk0JAiEe69cu6-bNESsg" location="SRC" left="_eb7PoJAiEe69cu6-bNESsg" order="10" right="_pK_aYJAiEe69cu6-bNESsg">
+    <expression>SAS_FILESRC.F5 = TRANSCO_status.CODE</expression>
+  </join>
+  <join id="_-VebIJAiEe69cu6-bNESsg" location="SRC" left="_9k5SwJAiEe69cu6-bNESsg" order="30" right="_eb7PoJAiEe69cu6-bNESsg">
+    <expression>SOURCE.NOM_FICHIER = SAS_FILESRC.FILE_NOM</expression>
+  </join>
+  <filter id="_lSeQsJAiEe69cu6-bNESsg" location="SRC">
+    <expression>SAS_FILESRC.F1 = '203'</expression>
+  </filter>
+  <filter id="_qtcroJAiEe69cu6-bNESsg" location="SRC">
+    <expression>TRANSCO_status.TYPE = 'STATUS_EMAIL'</expression>
+  </filter>
+  <template id="_wNTX0JAoEe69cu6-bNESsg" name="I_SAS_EMAIL" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_e_VesJAiEe69cu6-bNESsg">
+    <parameter id="_VzcZEJAxEe69cu6-bNESsg" name="truncateTargetTable" value="true"/>
+  </template>
+  <template id="_wqsecJAoEe69cu6-bNESsg" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_e_VesJAiEe69cu6-bNESsg"/>
+  <dataSet id="_e_fPtJAiEe69cu6-bNESsg">
+    <container>_e_VesJAiEe69cu6-bNESsg</container>
+  </dataSet>
+  <dataSet id="_pK_aaJAiEe69cu6-bNESsg">
+    <container>_pK_aYJAiEe69cu6-bNESsg</container>
+    <container>_eb7PoJAiEe69cu6-bNESsg</container>
+    <container>_9k5SwJAiEe69cu6-bNESsg</container>
+  </dataSet>
+  <hint>
+    <usedField>#_eb7PpZAiEe69cu6-bNESsg</usedField>
+    <usedField>#_eb7PppAiEe69cu6-bNESsg</usedField>
+    <usedField>#_eb7Po5AiEe69cu6-bNESsg</usedField>
+    <usedField>#_eb7Pp5AiEe69cu6-bNESsg</usedField>
+    <usedField>#_eb7PopAiEe69cu6-bNESsg</usedField>
+    <usedField>#_pK_aYpAiEe69cu6-bNESsg</usedField>
+    <usedField>#_pK_aZJAiEe69cu6-bNESsg</usedField>
+    <usedField>#_pK_aY5AiEe69cu6-bNESsg</usedField>
+    <usedField>#_9k5SxJAiEe69cu6-bNESsg</usedField>
+    <usedField>#_9k5SwpAiEe69cu6-bNESsg</usedField>
+    <usedField>#_9k5Sw5AiEe69cu6-bNESsg</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_dwRqkpAiEe69cu6-bNESsg" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_lSoBtpAiEe69cu6-bNESsg" type="2002">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_lSoBt5AiEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_lSoBuJAiEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_lSoBuZAiEe69cu6-bNESsg"/>
+    <element xmi:type="map:Filter" href="resource.map#_lSeQsJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lSoBupAiEe69cu6-bNESsg" x="584" y="202"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_pLFhAJAiEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhApAiEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhA5AiEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhBJAiEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhBZAiEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_pLFhBpAiEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_pLFhB5AiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_pLFhCJAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhCZAiEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_pLFhCpAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_pLFhC5AiEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_pLFhDJAiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_pLFhDZAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_pLFhDpAiEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_pK_aYJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pLFhAZAiEe69cu6-bNESsg" x="695" y="161"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_qtr8MJAiEe69cu6-bNESsg" type="2002">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_qtr8MZAiEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_qtr8MpAiEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_qtr8M5AiEe69cu6-bNESsg"/>
+    <element xmi:type="map:Filter" href="resource.map#_qtcroJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qtr8NJAiEe69cu6-bNESsg" x="917" y="195"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_rVPrdZAiEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_rVPrdpAiEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_rVPrd5AiEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_rVPreJAiEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_rVJk0JAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rVPreZAiEe69cu6-bNESsg" x="569" y="290"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_-VrPcJAiEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-VrPcZAiEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-VrPcpAiEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-VrPc5AiEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_-VebIJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-VrPdJAiEe69cu6-bNESsg" x="627" y="399"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_9lDDwJAiEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDwpAiEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDw5AiEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDxJAiEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDxZAiEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9lDDxpAiEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_9lDDx5AiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_9lDDyJAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDyZAiEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_9lDDypAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_9lDDy5AiEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_9lDDzJAiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_9lDDzZAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_9lDDzpAiEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_9k5SwJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9lDDwZAiEe69cu6-bNESsg" x="791" y="361"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ecAvPJAiEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvPpAiEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvP5AiEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvQJAiEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvQZAiEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ecAvQpAiEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ecAvQ5AiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ecAvRJAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvRZAiEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ecAvRpAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ecAvR5AiEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ecAvSJAiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ecAvSZAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ecAvSpAiEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_eb7PoJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecAvPZAiEe69cu6-bNESsg" x="228" y="100"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_e_fPxJAiEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPxpAiEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPx5AiEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPyJAiEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPyZAiEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_e_fPypAiEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_e_fPy5AiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_e_fPzJAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPzZAiEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_e_fPzpAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_e_fPz5AiEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_e_fP0JAiEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_e_fP0ZAiEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_e_fP0pAiEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_e_VesJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e_fPxZAiEe69cu6-bNESsg" x="1038" y="111"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_dwRqk5AiEe69cu6-bNESsg"/>
+  <element xmi:type="map:Map" href="resource.map#_dv0-oJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map$name=SAS%20email?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_h2i8gpAiEe69cu6-bNESsg" type="targetLink" source="_e_fPxJAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h2i8g5AiEe69cu6-bNESsg" points="[-83, 6, 551, 0]$[-552, 0, 82, -6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_h2i8iJAiEe69cu6-bNESsg" type="targetSetLink" source="_e_fPxJAiEe69cu6-bNESsg" target="_e_fPxJAiEe69cu6-bNESsg">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_h2i8YJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h2i8iZAiEe69cu6-bNESsg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_lSoBu5AiEe69cu6-bNESsg" type="joinLink" source="_lSoBtpAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSoBvJAiEe69cu6-bNESsg" points="[0, 0, -381, -305]$[299, 239, -82, -66]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_qtr8NZAiEe69cu6-bNESsg" type="joinLink" source="_qtr8MJAiEe69cu6-bNESsg" target="_pLFhAJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qtr8NpAiEe69cu6-bNESsg" points="[0, 0, -732, -441]$[667, 402, -65, -39]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rVPrepAiEe69cu6-bNESsg" type="joinLink" source="_rVPrdZAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rVPre5AiEe69cu6-bNESsg" points="[-1, -1, -382, -306]$[299, 239, -82, -66]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rVPrfJAiEe69cu6-bNESsg" type="joinLink" source="_rVPrdZAiEe69cu6-bNESsg" target="_pLFhAJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rVPrfZAiEe69cu6-bNESsg" points="[-1, -1, -733, -442]$[667, 402, -65, -39]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_rVPrfpAiEe69cu6-bNESsg" type="targetDataSetLink" source="_e_fPxJAiEe69cu6-bNESsg" target="_e_fPxJAiEe69cu6-bNESsg">
+    <element xmi:type="map:DataSet" href="resource.map#_pK_aaJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rVPrf5AiEe69cu6-bNESsg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_9O7p0JAiEe69cu6-bNESsg" type="targetLink" source="_e_fPxJAiEe69cu6-bNESsg" target="_pLFhAJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9O7p0ZAiEe69cu6-bNESsg" points="[-122, 60, 296, -145]$[-353, 173, 65, -32]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-VrPdZAiEe69cu6-bNESsg" type="joinLink" source="_-VrPcJAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-VrPdpAiEe69cu6-bNESsg" points="[-1, -1, -382, -306]$[299, 239, -82, -66]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-VrPd5AiEe69cu6-bNESsg" type="joinLink" source="_-VrPcJAiEe69cu6-bNESsg" target="_9lDDwJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-VrPeJAiEe69cu6-bNESsg" points="[-1, -1, -1086, -419]$[1002, 386, -83, -32]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-ueJ8JAiEe69cu6-bNESsg" type="targetLink" source="_e_fPxJAiEe69cu6-bNESsg" target="_9lDDwJAiEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-ueJ8ZAiEe69cu6-bNESsg" points="[-21, 60, 64, -189]$[-71, 206, 14, -43]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>

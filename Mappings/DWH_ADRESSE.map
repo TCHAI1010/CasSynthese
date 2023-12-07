@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="__ceZQJA_Ee69cu6-bNESsg" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_BYPiYJBAEe69cu6-bNESsg" alias="SAS_ADRESSE" dataset="_BYVpAJBAEe69cu6-bNESsg" ref="resource.md#_uRfA0ZAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_ADRESSE?">
+    <field id="_BYSlsJBAEe69cu6-bNESsg" fullAlias="STATUS" name="STATUS" ref="resource.md#_uW0MxpAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?"/>
+    <field id="_BYTz0ZBAEe69cu6-bNESsg" fullAlias="QUALITE" name="QUALITE" ref="resource.md#_uW2B8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=QUALITE?"/>
+    <field id="_BYTz0pBAEe69cu6-bNESsg" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_uW2B9pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?"/>
+    <field id="_BYSlspBAEe69cu6-bNESsg" fullAlias="LIGNE_2" name="LIGNE_2" ref="resource.md#_uW0z0JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_2?"/>
+    <field id="_BYTMwZBAEe69cu6-bNESsg" fullAlias="LIGNE_5" name="LIGNE_5" ref="resource.md#_uW1a4JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_5?"/>
+    <field id="_BYTz05BAEe69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_uW2B-5AnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <field id="_BYSlsZBAEe69cu6-bNESsg" fullAlias="LIGNE_1" name="LIGNE_1" ref="resource.md#_uW0MzJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_1?"/>
+    <field id="_BYTz0JBAEe69cu6-bNESsg" fullAlias="PAYS" name="PAYS" ref="resource.md#_uW1a8pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PAYS?"/>
+    <field id="_BYR-oZBAEe69cu6-bNESsg" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_uW0MwJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_CLIENT?" updateKey="true"/>
+    <field id="_BYTMwJBAEe69cu6-bNESsg" fullAlias="LIGNE_4" name="LIGNE_4" ref="resource.md#_uW0z3JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_4?"/>
+    <field id="_BYTMwpBAEe69cu6-bNESsg" fullAlias="VILLE" name="VILLE" ref="resource.md#_uW1a5pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=VILLE?"/>
+    <field id="_BYTMw5BAEe69cu6-bNESsg" fullAlias="CODE_POSTAL" name="CODE_POSTAL" ref="resource.md#_uW1a7JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE_POSTAL?"/>
+    <field id="_BYSls5BAEe69cu6-bNESsg" fullAlias="LIGNE_3" name="LIGNE_3" ref="resource.md#_uW0z1pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_3?"/>
+    <constraint id="_BYTz1JBAEe69cu6-bNESsg" name="FK_CLE_CLIENT3" ref="resource.md#_unj-gJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT3?" reject="true"/>
+    <constraint id="_BYTz1ZBAEe69cu6-bNESsg" name="FK_ID_FICHIER3" ref="resource.md#_unjXcJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3?" reject="true"/>
+    <constraint id="_BYTz1pBAEe69cu6-bNESsg" name="PK_CLE_CLIENT3" ref="resource.md#_uW66cJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT3?" reject="true"/>
+  </datastore>
+  <datastore id="_BpfqcJBAEe69cu6-bNESsg" alias="DWH_ADRESSE" control="true" dataset="_BpjU0JBAEe69cu6-bNESsg" ref="resource.md#_kY7_oZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_ADRESSE?" subExpression="[A]">
+    <field id="_BphfopBAEe69cu6-bNESsg" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_keVdAJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_C7SpgZBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_BphfpJBAEe69cu6-bNESsg" enable="true" insert="false" name="DATE_MAJ" ref="resource.md#_keVdC5AtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_MAJ?" update="true">
+      <expression id="_C7SpgpBAEe69cu6-bNESsg" location="TRG" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>current_timestamp</expression>
+      </expression>
+    </field>
+    <field id="_Bpg4kZBAEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_4" ref="resource.md#_keUO5pAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_4?" update="true">
+      <expression id="_C7TQkJBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.LIGNE_4</expression>
+      </expression>
+    </field>
+    <field id="_BphfoZBAEe69cu6-bNESsg" enable="true" insert="true" name="QUALITE" ref="resource.md#_keU2ApAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=QUALITE?" update="true">
+      <expression id="_C7TQkZBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.QUALITE</expression>
+      </expression>
+    </field>
+    <field id="_BpfqcpBAEe69cu6-bNESsg" enable="true" insert="true" name="SID_CLIENT" ref="resource.md#_keTAwJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SID_CLIENT?" update="true" updateKey="true">
+      <expression id="_C7TQkpBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>DWH_CLIENT.SID_CLIENT</expression>
+      </expression>
+    </field>
+    <field id="_Bpg4lJBAEe69cu6-bNESsg" enable="true" insert="true" name="CODE_POSTAL" ref="resource.md#_keU19pAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE_POSTAL?" update="true">
+      <expression id="_C7TQk5BAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.CODE_POSTAL</expression>
+      </expression>
+    </field>
+    <field id="_BpgRgZBAEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_1" ref="resource.md#_keTn1pAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_1?" update="true">
+      <expression id="_C7T3oJBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.LIGNE_1</expression>
+      </expression>
+    </field>
+    <field id="_Bpg4kJBAEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_3" ref="resource.md#_keUO4JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_3?" update="true">
+      <expression id="_C7T3oZBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.LIGNE_3</expression>
+      </expression>
+    </field>
+    <field id="_BpgRgpBAEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_2" ref="resource.md#_keTn3JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_2?" update="true">
+      <expression id="_C7T3opBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.LIGNE_2</expression>
+      </expression>
+    </field>
+    <field id="_BpgRgJBAEe69cu6-bNESsg" enable="true" insert="true" name="STATUS" ref="resource.md#_keTn0JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" update="true">
+      <expression id="_C7T3o5BAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_Bphfo5BAEe69cu6-bNESsg" enable="true" insert="true" name="DATE_IMPORT" ref="resource.md#_keVdBZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?" update="true">
+      <expression id="_C7T3pJBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.DATE_IMPORT</expression>
+      </expression>
+    </field>
+    <field id="_BphfoJBAEe69cu6-bNESsg" enable="true" insert="true" name="PAYS" ref="resource.md#_keU1_JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PAYS?" update="true">
+      <expression id="_C7UesJBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.PAYS</expression>
+      </expression>
+    </field>
+    <field id="_Bpg4kpBAEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_5" ref="resource.md#_keUO7JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_5?" update="true">
+      <expression id="_C7UesZBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.LIGNE_5</expression>
+      </expression>
+    </field>
+    <field id="_Bpg4k5BAEe69cu6-bNESsg" enable="true" insert="true" name="VILLE" ref="resource.md#_keU18JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=VILLE?" update="true">
+      <expression id="_C7UespBAEe69cu6-bNESsg" setDescriptorRef="_C7SpgJBAEe69cu6-bNESsg">
+        <expression>SAS_ADRESSE.VILLE</expression>
+      </expression>
+    </field>
+    <constraint id="_BphfpZBAEe69cu6-bNESsg" name="FK_ID_FICHIER2_DWH" ref="resource.md#_kq7HgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2_DWH?" reject="true"/>
+    <constraint id="_BpiGsJBAEe69cu6-bNESsg" name="PK_SID_CLIENT2_DWH" ref="resource.md#_keaVgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT2_DWH?" reject="false"/>
+    <constraint id="_BpiGsZBAEe69cu6-bNESsg" name="FK_SID_CLIENT2_DWH" ref="resource.md#_kq6gcJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_CLIENT2_DWH?" reject="true"/>
+    <setDescriptor id="_C7SpgJBAEe69cu6-bNESsg" label="A"/>
+  </datastore>
+  <datastore id="_CClf4JBAEe69cu6-bNESsg" alias="DWH_CLIENT" dataset="_BYVpAJBAEe69cu6-bNESsg" ref="resource.md#_kj22MZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_CLIENT?">
+    <field id="_CCmG85BAEe69cu6-bNESsg" name="SID_COMPTE" ref="resource.md#_kpLbEJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SID_COMPTE?"/>
+    <field id="_CCmG-pBAEe69cu6-bNESsg" name="SEXE" ref="resource.md#_kpMpMJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SEXE?"/>
+    <field id="_CCmG-5BAEe69cu6-bNESsg" name="MUTUELLE" ref="resource.md#_kpMpNpAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=MUTUELLE?"/>
+    <field id="_CCmG9JBAEe69cu6-bNESsg" name="STATUS" ref="resource.md#_kpLbFZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?"/>
+    <field id="_CCmG-ZBAEe69cu6-bNESsg" name="DATE_ANNIVERSAIRE" ref="resource.md#_kpMCMpAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_ANNIVERSAIRE?"/>
+    <field id="_CCmG95BAEe69cu6-bNESsg" name="PRENOM" ref="resource.md#_kpMCJpAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PRENOM?"/>
+    <field id="_CCmG_JBAEe69cu6-bNESsg" name="ID_FICHIER" ref="resource.md#_kpMpPZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?"/>
+    <field id="_CCmG9ZBAEe69cu6-bNESsg" name="TYPE" ref="resource.md#_kpLbG5AtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
+    <field id="_CCmG_pBAEe69cu6-bNESsg" name="DATE_MAJ" ref="resource.md#_kpNQRpAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_MAJ?"/>
+    <field id="_CCmG9pBAEe69cu6-bNESsg" name="CIVILITE" ref="resource.md#_kpMCIJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CIVILITE?"/>
+    <field id="_CCmG-JBAEe69cu6-bNESsg" name="NOM" ref="resource.md#_kpMCLJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM?"/>
+    <field id="_CCmG8ZBAEe69cu6-bNESsg" fullAlias="SID_CLIENT" name="SID_CLIENT" ref="resource.md#_kpK0AJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SID_CLIENT?" updateKey="true"/>
+    <field id="_CCmG8pBAEe69cu6-bNESsg" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_kpK0BZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_CLIENT?"/>
+    <field id="_CCmG_ZBAEe69cu6-bNESsg" name="DATE_IMPORT" ref="resource.md#_kpNQQJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <constraint id="_CCmG_5BAEe69cu6-bNESsg" name="PK_SID_CLIENT" ref="resource.md#_kpQ6oJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT?" reject="true"/>
+    <constraint id="_CCmHAJBAEe69cu6-bNESsg" name="FK_ID_FICHIER0_DWH" ref="resource.md#_kr-QZJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER0_DWH?" reject="true"/>
+    <constraint id="_CCmHAZBAEe69cu6-bNESsg" name="FK_CLE_CLIENT_DWH" ref="resource.md#_kr-3cJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT_DWH?" reject="true"/>
+    <constraint id="_CCmuAJBAEe69cu6-bNESsg" name="FK_SID_COMPTE_DWH" ref="resource.md#_kr-QYJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_COMPTE_DWH?" reject="true"/>
+  </datastore>
+  <join id="_HLsHsJBAEe69cu6-bNESsg" location="SRC" left="_CClf4JBAEe69cu6-bNESsg" order="10" right="_BYPiYJBAEe69cu6-bNESsg">
+    <expression>DWH_CLIENT.CLE_CLIENT = SAS_ADRESSE.CLE_CLIENT</expression>
+  </join>
+  <template id="_C7Vs0JBAEe69cu6-bNESsg" name="I_DWH_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_BpfqcJBAEe69cu6-bNESsg"/>
+  <template id="_MyKA8JBAEe69cu6-bNESsg" name="R_DWH_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_BpfqcJBAEe69cu6-bNESsg"/>
+  <dataSet id="_BYVpAJBAEe69cu6-bNESsg">
+    <container>_BYPiYJBAEe69cu6-bNESsg</container>
+    <container>_CClf4JBAEe69cu6-bNESsg</container>
+  </dataSet>
+  <dataSet id="_BpjU0JBAEe69cu6-bNESsg">
+    <container>_BpfqcJBAEe69cu6-bNESsg</container>
+  </dataSet>
+  <hint>
+    <usedField>#_BYSlsJBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTz0ZBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTz0pBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYSlspBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTMwZBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTz05BAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYSlsZBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTz0JBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYR-oZBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTMwJBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTMwpBAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYTMw5BAEe69cu6-bNESsg</usedField>
+    <usedField>#_BYSls5BAEe69cu6-bNESsg</usedField>
+    <usedField>#_CCmG8ZBAEe69cu6-bNESsg</usedField>
+    <usedField>#_CCmG8pBAEe69cu6-bNESsg</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="__c0XgJA_Ee69cu6-bNESsg" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_BYYFQJBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFQpBAEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFQ5BAEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFRJBAEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFRZBAEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BYYFRpBAEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BYYFR5BAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BYYFSJBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFSZBAEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BYYFSpBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BYYFS5BAEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BYYFTJBAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BYYFTZBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BYYFTpBAEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_BYPiYJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BYYFQZBAEe69cu6-bNESsg" x="209" y="114"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_BplKAJBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKApBAEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKA5BAEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKBJBAEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKBZBAEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BplKBpBAEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BplKB5BAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BplKCJBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKCZBAEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BplKCpBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_BplKC5BAEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BplKDJBAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BplKDZBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_BplKDpBAEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_BpfqcJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BplKAZBAEe69cu6-bNESsg" x="1133" y="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_CCpxUJBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCpxUpBAEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCpxU5BAEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCpxVJBAEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCpxVZBAEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_CCpxVpBAEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_CCpxV5BAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_CCpxWJBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCpxWZBAEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_CCqYYJBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CCqYYZBAEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_CCqYYpBAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_CCqYY5BAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_CCqYZJBAEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_CClf4JBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CCpxUZBAEe69cu6-bNESsg" x="707" y="311"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_HL7YQJBAEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HL7YQZBAEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HL7YQpBAEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_HL7YQ5BAEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_HLsHsJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL7YRJBAEe69cu6-bNESsg" x="554" y="263"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="__c0XgZA_Ee69cu6-bNESsg"/>
+  <element xmi:type="map:Map" href="resource.map#__ceZQJA_Ee69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map$name=DWH_ADRESSE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_C7Z-QJBAEe69cu6-bNESsg" type="targetLink" source="_BplKAJBAEe69cu6-bNESsg" target="_BYYFQJBAEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_C7Z-QZBAEe69cu6-bNESsg" points="[-83, 1, 841, 0]$[-841, 0, 83, -1]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_C7alUJBAEe69cu6-bNESsg" type="targetDataSetLink" source="_BplKAJBAEe69cu6-bNESsg" target="_BplKAJBAEe69cu6-bNESsg">
+    <element xmi:type="map:DataSet" href="resource.map#_BYVpAJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_C7alUZBAEe69cu6-bNESsg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_C7bMYJBAEe69cu6-bNESsg" type="targetSetLink" source="_BplKAJBAEe69cu6-bNESsg" target="_BplKAJBAEe69cu6-bNESsg">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_C7SpgJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_C7bMYZBAEe69cu6-bNESsg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_HL7YRZBAEe69cu6-bNESsg" type="joinLink" source="_HL7YQJBAEe69cu6-bNESsg" target="_CCpxUJBAEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HL7YRpBAEe69cu6-bNESsg" points="[-1, -1, -808, -443]$[707, 387, -100, -55]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_HL7YR5BAEe69cu6-bNESsg" type="joinLink" source="_HL7YQJBAEe69cu6-bNESsg" target="_BYYFQJBAEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HL7YSJBAEe69cu6-bNESsg" points="[-1, -1, -293, -238]$[209, 169, -83, -68]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Hg6w0JBAEe69cu6-bNESsg" type="targetLink" source="_BplKAJBAEe69cu6-bNESsg" target="_CCpxUJBAEe69cu6-bNESsg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Hg6w0ZBAEe69cu6-bNESsg" points="[-174, 72, 326, -134]$[-399, 165, 101, -41]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>

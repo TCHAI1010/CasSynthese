@@ -1,8 +1,15 @@
 eclipse.preferences.version=1
 encoding//Mappings/Client.map=UTF-8
-encoding//Mappings/Init.map=UTF-8
+encoding//Mappings/DWH_ADRESSE.map=UTF-8
+encoding//Mappings/DWH_CLIENT.map=UTF-8
+encoding//Mappings/DWH_COMPTE.map=UTF-8
+encoding//Mappings/DWH_EMAIL.map=UTF-8
+encoding//Mappings/DWH_TEL.map=UTF-8
+encoding//Mappings/INIT.map=UTF-8
 encoding//Mappings/SAS\ Compte.map=UTF-8
-encoding//Mappings/SAS\ client.map=UTF-8
+encoding//Mappings/SAS\ adresse.map=UTF-8
+encoding//Mappings/SAS\ email.map=UTF-8
+encoding//Mappings/SAS\ telephone.map=UTF-8
 encoding//Mappings/Source.map=UTF-8
 encoding//Mappings/test.map=UTF-8
 encoding//Process/Main.proc=UTF-8

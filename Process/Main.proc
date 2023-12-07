@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proc:process xmlns:proc="http://www.example.org/proc" id="529ce7ad-7c20-4cb5-b771-c082d9dcf9e3">
   <actionCode id="9c562704-2478-4e92-b1f4-2565f9a32c06" isBeginAction="false" name="Sql To Parameters" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.sqlToParameters">
-    <link id="68f3a2d6-d81a-4903-b06b-e690836efc12" executionCondition="${~/nb_lignes_fichiersrc}$ ==  %e(rhino){__ctx__.sumVariable(&quot;SQL_STAT_INSERT&quot;,&quot;../Init&quot;)}e(rhino)%" executionType="OK" generationType="OK_KO" mandatory="1" targetId="e0c9555a-beca-4719-b559-3e2625cfa398"/>
-    <metaDataLink id="8dabf74c-f143-4d7c-9f3f-f113a24ee441" name="CSG1_ORA2" target="resource.md#_CKpkIIUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CSG1_ORA2?"/>
+    <link id="68f3a2d6-d81a-4903-b06b-e690836efc12" executionCondition="${~/nb_lignes_fichiersrc}$ ==  ${~/file_nb_line}$" executionType="OK" generationType="OK_KO" mandatory="1" targetId="e0c9555a-beca-4719-b559-3e2625cfa398"/>
+    <metaDataLink id="e50fcf45-f184-47d7-944e-e30aaecb87a7" name="CSG1_ORA2" target="resource.md#_hZDAsJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CSG1_ORA2?"/>
     <parameter id="db377eca-4e4a-4fdb-a2ff-f2f6d1e445b6" name="SQL_CONNECTION" type="String"/>
     <code>&lt;sqlToParameters>&#xD;
+	&lt;parameter name=&quot;~/file_nb_line&quot; type=&quot;Integer&quot;>&#xD;
+select count(*) from  CSG1_ORA2.SAS_FILESRC&#xD;
+	&lt;/parameter>&#xD;
 	&lt;parameter name=&quot;../nb_lignes_fichiersrc&quot; type=&quot;Integer&quot;>&#xD;
 select F2 from CSG1_ORA2.SAS_FILESRC&#xD;
 where F1 = '999'&#xD;
@@ -16,10 +19,14 @@ where F1 = '000'&#xD;
 	&lt;parameter name=&quot;../nb_ligne_footer&quot; type=&quot;Integer&quot;>&#xD;
 select count(*) from CSG1_ORA2.SAS_FILESRC&#xD;
 where F1 = '000'&#xD;
+	&lt;/parameter>&#xD;
+	&#xD;
+	&lt;parameter name=&quot;~/file_name&quot; type=&quot;String&quot;>&#xD;
+select FILE_NOM from  CSG1_ORA2.SAS_FILESRC&#xD;
 	&lt;/parameter>		&#xD;
 &lt;/sqlToParameters></code>
   </actionCode>
-  <actionProcessRef id="c48189a1-97d3-47b2-89a5-4c63fbf1a7c4" isBeginAction="false" name="Init" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_btbAgIU2Ee6BKsDnQj9IRA?fileId=_btbAgIU2Ee6BKsDnQj9IRA$name=Init$type=map?">
+  <actionProcessRef id="c48189a1-97d3-47b2-89a5-4c63fbf1a7c4" isBeginAction="false" name="Init" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_btbAgIU2Ee6BKsDnQj9IRA?fileId=_btbAgIU2Ee6BKsDnQj9IRA$type=map$name=INIT?">
     <link id="adc5e4e2-6d8b-4183-8667-1ddc2fb4e9af" executionType="OK" generationType="OK_KO" mandatory="1" targetId="9c562704-2478-4e92-b1f4-2565f9a32c06"/>
   </actionProcessRef>
   <actionProcessRef id="e0c9555a-beca-4719-b559-3e2625cfa398" isBeginAction="false" name="Source" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_NaVVYIU2Ee6BKsDnQj9IRA?fileId=_NaVVYIU2Ee6BKsDnQj9IRA$type=map$name=Source?"/>
@@ -33,9 +40,9 @@ where F1 = '000'&#xD;
       <styles xmi:type="notation:FilteringStyle" xmi:id="_ks169IUoEe6BKsDnQj9IRA"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_ks169YUoEe6BKsDnQj9IRA" type="7002">
-      <children xmi:type="notation:Node" xmi:id="_uUApgoUoEe6BKsDnQj9IRA" type="3002">
-        <element xmi:type="proc:MetaDataLink" href="resource.proc#8dabf74c-f143-4d7c-9f3f-f113a24ee441?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_uUApg4UoEe6BKsDnQj9IRA"/>
+      <children xmi:type="notation:Node" xmi:id="_6LRtwJAxEe69cu6-bNESsg" type="3002">
+        <element xmi:type="proc:MetaDataLink" href="resource.proc#e50fcf45-f184-47d7-944e-e30aaecb87a7?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_6LRtwZAxEe69cu6-bNESsg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_ks169oUoEe6BKsDnQj9IRA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_ks1694UoEe6BKsDnQj9IRA"/>
@@ -75,7 +82,7 @@ where F1 = '000'&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_bcjWJIU6Ee6BKsDnQj9IRA" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#e0c9555a-beca-4719-b559-3e2625cfa398?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=Source?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bcjWJYU6Ee6BKsDnQj9IRA" x="355" y="260"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bcjWJYU6Ee6BKsDnQj9IRA" x="340" y="250"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_R2jxcYUoEe6BKsDnQj9IRA"/>
   <element xmi:type="proc:ActionProcess" href="resource.proc#529ce7ad-7c20-4cb5-b771-c082d9dcf9e3?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=Main?"/>

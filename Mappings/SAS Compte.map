@@ -1,88 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map:map xmlns:map="http://www.indy.com/v2/map" id="_Sq2nEIUmEe6BKsDnQj9IRA" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
-  <datastore id="_eUB9wIUzEe6BKsDnQj9IRA" alias="TRANSCO" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_ygdXpIUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
-    <field id="_eUB9xIUzEe6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_yj2C0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
-    <field id="_eUB9woUzEe6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_yjsR0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
-    <field id="_eUB9w4UzEe6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_yjsR1oUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
+  <datastore id="_eUB9wIUzEe6BKsDnQj9IRA" alias="TRANSCO_status" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
+    <field id="_eUB9xIUzEe6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_jo15HJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
+    <field id="_eUB9woUzEe6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_jo15EJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
+    <field id="_eUB9w4UzEe6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_jo15FpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
   </datastore>
-  <datastore id="_tqZDwIUzEe6BKsDnQj9IRA" alias="SAS_COMPTE" dataset="_pyT3kYU2Ee6BKsDnQj9IRA" ref="resource.md#_Qv-OwYUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_COMPTE?" subExpression="[A]">
-    <field id="_tqZDxoUzEe6BKsDnQj9IRA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_Q1Le-IUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" update="true">
+  <datastore id="_tqZDwIUzEe6BKsDnQj9IRA" alias="SAS_COMPTE" control="true" dataset="_pyT3kYU2Ee6BKsDnQj9IRA" ref="resource.md#_jua8pJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_COMPTE?" subExpression="[A]">
+    <field id="_tqZDxoUzEe6BKsDnQj9IRA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_jzfp7JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" update="true">
       <expression id="_II_CcYU0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
         <expression>SOURCE.ID_FICHIER</expression>
       </expression>
     </field>
-    <field id="_tqZDwoUzEe6BKsDnQj9IRA" enable="true" insert="true" name="CLE_COMPTE" ref="resource.md#_Q1Le4IUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_COMPTE?" update="true" updateKey="true">
+    <field id="_tqZDwoUzEe6BKsDnQj9IRA" enable="true" insert="true" name="CLE_COMPTE" ref="resource.md#_jzZjQJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_COMPTE?" update="true" updateKey="true">
       <expression id="_II_CcoU0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
         <expression>SAS_FILESRC.F3</expression>
       </expression>
     </field>
-    <field id="_tqZDx4UzEe6BKsDnQj9IRA" enable="true" insert="true" name="DATE_IMPORT" ref="resource.md#_Q1Le_YUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?" update="true">
+    <field id="_tqZDx4UzEe6BKsDnQj9IRA" enable="true" insert="true" name="DATE_IMPORT" ref="resource.md#_jzfp8ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?" update="true">
       <expression id="_II_pgIU0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
-        <expression>SOURCE.DATE_IMPORT</expression>
+        <expression>SAS_FILESRC.DATE_IMPORT</expression>
       </expression>
     </field>
-    <field id="_tqZDxIUzEe6BKsDnQj9IRA" enable="true" insert="true" name="TYPE" ref="resource.md#_Q1Le7IUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?" update="true">
+    <field id="_tqZDxIUzEe6BKsDnQj9IRA" enable="true" insert="true" name="TYPE" ref="resource.md#_jzfp4JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?" update="true">
       <expression id="_II_pgYU0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
-        <expression>TRANSCO_2.LIBELLE</expression>
+        <expression>TRANSCO_type.LIBELLE</expression>
       </expression>
     </field>
-    <field id="_tqZDw4UzEe6BKsDnQj9IRA" enable="true" insert="true" name="STATUS" ref="resource.md#_Q1Le5oUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" update="true">
+    <field id="_tqZDw4UzEe6BKsDnQj9IRA" enable="true" insert="true" name="STATUS" ref="resource.md#_jzZjRpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" update="true">
       <expression id="_II_pgoU0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
-        <expression>TRANSCO.LIBELLE</expression>
+        <expression>TRANSCO_status.LIBELLE</expression>
       </expression>
     </field>
-    <field id="_tqZDxYUzEe6BKsDnQj9IRA" enable="true" insert="true" name="CABINET_RATTACHEMENT" ref="resource.md#_Q1Le8oUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CABINET_RATTACHEMENT?" update="true">
+    <field id="_tqZDxYUzEe6BKsDnQj9IRA" enable="true" insert="true" name="CABINET_RATTACHEMENT" ref="resource.md#_jzfp5pAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CABINET_RATTACHEMENT?" update="true">
       <expression id="_II_pg4U0Ee6BKsDnQj9IRA" setDescriptorRef="_II_CcIU0Ee6BKsDnQj9IRA">
-        <expression>TRANSCO_3.LIBELLE</expression>
+        <expression>TRANSCO_cabinet.LIBELLE</expression>
       </expression>
     </field>
-    <constraint id="_tqZDyIUzEe6BKsDnQj9IRA" name="PK_COMPTE" ref="resource.md#_Q1LfA4UmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_COMPTE?" reject="true"/>
-    <constraint id="_tqZDyYUzEe6BKsDnQj9IRA" name="SYS_C0016735" ref="resource.md#_zHlCAIUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SYS_C0016735?" reject="true"/>
-    <constraint id="_tqZDyoUzEe6BKsDnQj9IRA" name="SYS_C0015464" ref="resource.md#_RNnNAIUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SYS_C0015464?" reject="true"/>
-    <constraint id="_5de5NoUzEe6BKsDnQj9IRA" name="SYS_C0016791" ref="resource.md#_5A1XkIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SYS_C0016791?" reject="true"/>
+    <constraint id="_PHyIcJAoEe69cu6-bNESsg" name="PK_CLE_COMPTE" ref="resource.md#_jzfp95AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_COMPTE?" reject="true"/>
+    <constraint id="_PHyIcZAoEe69cu6-bNESsg" name="FK_ID_FICHIER" ref="resource.md#_unDBIJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER?" reject="true"/>
     <setDescriptor id="_II_CcIU0Ee6BKsDnQj9IRA" label="A"/>
   </datastore>
-  <datastore id="_6MNlkIUzEe6BKsDnQj9IRA" alias="SAS_FILESRC" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_RJWsNIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_FILESRC?" subExpression="">
-    <field id="_6MNll4UzEe6BKsDnQj9IRA" enable="true" fullAlias="F5" name="F5" ref="resource.md#_RM_PHoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F5?"/>
-    <field id="_6MNlnIUzEe6BKsDnQj9IRA" enable="true" name="F10" ref="resource.md#_RNFVtoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F10?"/>
-    <field id="_6MNllIUzEe6BKsDnQj9IRA" enable="true" name="F2" ref="resource.md#_RM_PDIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
-    <field id="_6MNlmoUzEe6BKsDnQj9IRA" enable="true" name="F8" ref="resource.md#_RNFVqoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
-    <field id="_6MNlm4UzEe6BKsDnQj9IRA" enable="true" name="F9" ref="resource.md#_RNFVsIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F9?"/>
-    <field id="_6MNlloUzEe6BKsDnQj9IRA" enable="true" fullAlias="F4" name="F4" ref="resource.md#_RM_PGIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F4?"/>
-    <field id="_6MNlnoUzEe6BKsDnQj9IRA" enable="true" name="F12" ref="resource.md#_RNFVwoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F12?"/>
-    <field id="_6MNllYUzEe6BKsDnQj9IRA" enable="true" fullAlias="F3" name="F3" ref="resource.md#_RM_PEoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F3?"/>
-    <field id="_6MNlmIUzEe6BKsDnQj9IRA" enable="true" fullAlias="F6" name="F6" ref="resource.md#_RM_PJIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F6?"/>
-    <field id="_6MNlmYUzEe6BKsDnQj9IRA" enable="true" name="F7" ref="resource.md#_RNFVpIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
-    <field id="_6MNln4UzEe6BKsDnQj9IRA" enable="true" name="F13" ref="resource.md#_RNFVyIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F13?"/>
-    <field id="_6MNlkoUzEe6BKsDnQj9IRA" enable="true" fullAlias="FILE_NOM" name="FILE_NOM" ref="resource.md#_RM_PAIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FILE_NOM?"/>
-    <field id="_6MNlk4UzEe6BKsDnQj9IRA" enable="true" fullAlias="F1" name="F1" ref="resource.md#_RM_PBoUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F1?"/>
-    <field id="_6MNlnYUzEe6BKsDnQj9IRA" enable="true" name="F11" ref="resource.md#_RNFVvIUzEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F11?"/>
-    <field id="_JStmMIq8Ee6eAd0POgdy0A" name="DATE_IMPORT" ref="resource.md#_Iwu6gIq8Ee6eAd0POgdy0A?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+  <datastore id="_6MNlkIUzEe6BKsDnQj9IRA" alias="SAS_FILESRC" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_j44gNJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_FILESRC?" subExpression="">
+    <field id="_6MNll4UzEe6BKsDnQj9IRA" enable="true" fullAlias="F5" name="F5" ref="resource.md#_j8QkbpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F5?"/>
+    <field id="_6MNlnIUzEe6BKsDnQj9IRA" enable="true" name="F10" ref="resource.md#_j8QkjJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F10?"/>
+    <field id="_6MNllIUzEe6BKsDnQj9IRA" enable="true" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
+    <field id="_6MNlmoUzEe6BKsDnQj9IRA" enable="true" name="F8" ref="resource.md#_j8QkgJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
+    <field id="_6MNlm4UzEe6BKsDnQj9IRA" enable="true" name="F9" ref="resource.md#_j8QkhpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F9?"/>
+    <field id="_6MNlloUzEe6BKsDnQj9IRA" enable="true" fullAlias="F4" name="F4" ref="resource.md#_j8QkaJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F4?"/>
+    <field id="_6MNlnoUzEe6BKsDnQj9IRA" enable="true" name="F12" ref="resource.md#_j8QkmJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F12?"/>
+    <field id="_6MNllYUzEe6BKsDnQj9IRA" enable="true" fullAlias="F3" name="F3" ref="resource.md#_j8QkYpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F3?"/>
+    <field id="_6MNlmIUzEe6BKsDnQj9IRA" enable="true" fullAlias="F6" name="F6" ref="resource.md#_j8QkdJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F6?"/>
+    <field id="_6MNlmYUzEe6BKsDnQj9IRA" enable="true" name="F7" ref="resource.md#_j8QkepAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
+    <field id="_6MNln4UzEe6BKsDnQj9IRA" enable="true" name="F13" ref="resource.md#_j8QknpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F13?"/>
+    <field id="_6MNlkoUzEe6BKsDnQj9IRA" enable="true" fullAlias="FILE_NOM" name="FILE_NOM" ref="resource.md#_j8QkUJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FILE_NOM?"/>
+    <field id="_6MNlk4UzEe6BKsDnQj9IRA" enable="true" fullAlias="F1" name="F1" ref="resource.md#_j8QkVpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F1?"/>
+    <field id="_6MNlnYUzEe6BKsDnQj9IRA" enable="true" name="F11" ref="resource.md#_j8QkkpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F11?"/>
+    <field id="_JStmMIq8Ee6eAd0POgdy0A" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_j8QkpJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
   </datastore>
-  <datastore id="_vZ3A0IU0Ee6BKsDnQj9IRA" alias="TRANSCO_2" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_ygdXpIUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
-    <field id="_vZ3A04U0Ee6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_yjsR1oUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
-    <field id="_vZ3A1IU0Ee6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_yj2C0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
-    <field id="_vZ3A0oU0Ee6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_yjsR0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
+  <datastore id="_vZ3A0IU0Ee6BKsDnQj9IRA" alias="TRANSCO_type" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
+    <field id="_vZ3A04U0Ee6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_jo15FpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
+    <field id="_vZ3A1IU0Ee6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_jo15HJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
+    <field id="_vZ3A0oU0Ee6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_jo15EJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
   </datastore>
-  <datastore id="_8ax5cIU0Ee6BKsDnQj9IRA" alias="TRANSCO_3" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_ygdXpIUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
-    <field id="_8ax5c4U0Ee6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_yjsR1oUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
-    <field id="_8ax5dIU0Ee6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_yj2C0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
-    <field id="_8ax5coU0Ee6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_yjsR0IUvEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
+  <datastore id="_8ax5cIU0Ee6BKsDnQj9IRA" alias="TRANSCO_cabinet" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
+    <field id="_8ax5c4U0Ee6BKsDnQj9IRA" fullAlias="CODE" name="CODE" ref="resource.md#_jo15FpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE?"/>
+    <field id="_8ax5dIU0Ee6BKsDnQj9IRA" fullAlias="LIBELLE" name="LIBELLE" ref="resource.md#_jo15HJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIBELLE?"/>
+    <field id="_8ax5coU0Ee6BKsDnQj9IRA" fullAlias="TYPE" name="TYPE" ref="resource.md#_jo15EJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?"/>
   </datastore>
-  <datastore id="_vhL0AIU4Ee6BKsDnQj9IRA" alias="SOURCE" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_QqG3VIUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SOURCE?">
-    <field id="_vhL0AoU4Ee6BKsDnQj9IRA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_Qv4IIIUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" updateKey="true"/>
-    <field id="_vhL0A4U4Ee6BKsDnQj9IRA" fullAlias="NOM_FICHIER" name="NOM_FICHIER" ref="resource.md#_Qv4IJYUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM_FICHIER?"/>
-    <field id="_vhL0BIU4Ee6BKsDnQj9IRA" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_Qv4IK4UmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
-    <constraint id="_vhL0BYU4Ee6BKsDnQj9IRA" name="SYS_C0016789" ref="resource.md#_Qv4IMYUmEe6BKsDnQj9IRA?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SYS_C0016789?" reject="true"/>
+  <datastore id="_vhL0AIU4Ee6BKsDnQj9IRA" alias="SOURCE" dataset="_pyT3kIU2Ee6BKsDnQj9IRA" ref="resource.md#_jo7_sZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SOURCE?">
+    <field id="_vhL0AoU4Ee6BKsDnQj9IRA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_juUO8JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" updateKey="true"/>
+    <field id="_vhL0A4U4Ee6BKsDnQj9IRA" fullAlias="NOM_FICHIER" name="NOM_FICHIER" ref="resource.md#_juUO9ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM_FICHIER?"/>
+    <field id="_vhL0BIU4Ee6BKsDnQj9IRA" name="DATE_IMPORT" ref="resource.md#_juUO-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <constraint id="_OtyUEJAoEe69cu6-bNESsg" name="PK_ID_FICHIER" ref="resource.md#_jua8oJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_ID_FICHIER?" reject="true"/>
   </datastore>
   <join id="_VVjxcIU0Ee6BKsDnQj9IRA" location="SRC" left="_6MNlkIUzEe6BKsDnQj9IRA" order="10" right="_eUB9wIUzEe6BKsDnQj9IRA">
-    <expression>SAS_FILESRC.F4 = TRANSCO.CODE</expression>
+    <expression>SAS_FILESRC.F4 = TRANSCO_status.CODE</expression>
   </join>
   <join id="_xf0AsIU0Ee6BKsDnQj9IRA" location="SRC" left="_6MNlkIUzEe6BKsDnQj9IRA" order="30" right="_vZ3A0IU0Ee6BKsDnQj9IRA">
-    <expression>SAS_FILESRC.F5 = TRANSCO_2.CODE</expression>
+    <expression>SAS_FILESRC.F5 = TRANSCO_type.CODE</expression>
   </join>
   <join id="_AEnt8IU1Ee6BKsDnQj9IRA" location="SRC" left="_6MNlkIUzEe6BKsDnQj9IRA" order="50" right="_8ax5cIU0Ee6BKsDnQj9IRA">
-    <expression>SAS_FILESRC.F6 = TRANSCO_3.CODE</expression>
+    <expression>SAS_FILESRC.F6 = TRANSCO_cabinet.CODE</expression>
   </join>
   <join id="_28FfUIU4Ee6BKsDnQj9IRA" location="SRC" left="_vhL0AIU4Ee6BKsDnQj9IRA" order="70" right="_6MNlkIUzEe6BKsDnQj9IRA">
     <expression>SOURCE.NOM_FICHIER = SAS_FILESRC.FILE_NOM</expression>
@@ -91,17 +89,16 @@
     <expression>SAS_FILESRC.F1 = '100'</expression>
   </filter>
   <filter id="_gCM6UIU0Ee6BKsDnQj9IRA" location="SRC">
-    <expression>TRANSCO.TYPE = 'STATUS'</expression>
+    <expression>TRANSCO_status.TYPE = 'STATUS'</expression>
   </filter>
   <filter id="_yj7wIIU0Ee6BKsDnQj9IRA" location="SRC">
-    <expression>TRANSCO_2.TYPE = 'TYPE_COMPTE'</expression>
+    <expression>TRANSCO_type.TYPE = 'TYPE_COMPTE'</expression>
   </filter>
   <filter id="_BPVNkIU1Ee6BKsDnQj9IRA" location="SRC">
-    <expression>TRANSCO_3.TYPE = 'CABINET_RATTACHEMENT'</expression>
+    <expression>TRANSCO_cabinet.TYPE = 'CABINET_RATTACHEMENT'</expression>
   </filter>
-  <template id="_IJCFwIU0Ee6BKsDnQj9IRA" name="I_SAS_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_tqZDwIUzEe6BKsDnQj9IRA">
-    <parameter id="_YOFoUIU1Ee6BKsDnQj9IRA" name="truncateTargetTable" value="false"/>
-  </template>
+  <template id="_Ot0JQJAoEe69cu6-bNESsg" name="I_SAS_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_tqZDwIUzEe6BKsDnQj9IRA"/>
+  <template id="_Piz3kJAoEe69cu6-bNESsg" name="R_SAS_COMPTE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_tqZDwIUzEe6BKsDnQj9IRA"/>
   <dataSet id="_pyT3kIU2Ee6BKsDnQj9IRA">
     <container>_6MNlkIUzEe6BKsDnQj9IRA</container>
     <container>_8ax5cIU0Ee6BKsDnQj9IRA</container>
@@ -122,6 +119,7 @@
     <usedField>#_6MNlmIUzEe6BKsDnQj9IRA</usedField>
     <usedField>#_6MNlkoUzEe6BKsDnQj9IRA</usedField>
     <usedField>#_6MNlk4UzEe6BKsDnQj9IRA</usedField>
+    <usedField>#_JStmMIq8Ee6eAd0POgdy0A</usedField>
     <usedField>#_vZ3A04U0Ee6BKsDnQj9IRA</usedField>
     <usedField>#_vZ3A1IU0Ee6BKsDnQj9IRA</usedField>
     <usedField>#_vZ3A0oU0Ee6BKsDnQj9IRA</usedField>
@@ -130,7 +128,6 @@
     <usedField>#_8ax5coU0Ee6BKsDnQj9IRA</usedField>
     <usedField>#_vhL0AoU4Ee6BKsDnQj9IRA</usedField>
     <usedField>#_vhL0A4U4Ee6BKsDnQj9IRA</usedField>
-    <usedField>#_vhL0BIU4Ee6BKsDnQj9IRA</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_SuhmIIUmEe6BKsDnQj9IRA" type="Map" measurementUnit="Pixel">
