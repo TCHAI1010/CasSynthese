@@ -8,7 +8,7 @@
     <field id="_n2-XDoq4Ee6eAd0POgdy0A" fullAlias="F12" name="F12" ref="resource.md#_j8QkmJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F12?"/>
     <field id="_n2-XD4q4Ee6eAd0POgdy0A" fullAlias="F9" name="F9" ref="resource.md#_j8QkhpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F9?"/>
     <field id="_n2-XEIq4Ee6eAd0POgdy0A" fullAlias="F1" name="F1" ref="resource.md#_j8QkVpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F1?"/>
-    <field id="_n2-XEYq4Ee6eAd0POgdy0A" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
+    <field id="_n2-XEYq4Ee6eAd0POgdy0A" fullAlias="F2" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
     <field id="_n2-XEoq4Ee6eAd0POgdy0A" fullAlias="FILE_NOM" name="FILE_NOM" ref="resource.md#_j8QkUJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FILE_NOM?"/>
     <field id="_n2-XE4q4Ee6eAd0POgdy0A" fullAlias="F7" name="F7" ref="resource.md#_j8QkepAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
     <field id="_n2-XFIq4Ee6eAd0POgdy0A" fullAlias="F8" name="F8" ref="resource.md#_j8QkgJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
@@ -78,9 +78,17 @@
         <expression>SAS_FILESRC.F8</expression>
       </expression>
     </field>
+    <field id="_Y2jwEZWoEe6KJ9B1NiSMNg" enable="true" insert="true" name="ACT" ref="resource.md#_0e0Cl5WkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?" update="true">
+      <expression id="_Y2jwEpWoEe6KJ9B1NiSMNg" setDescriptorRef="_n2-XOIq4Ee6eAd0POgdy0A">
+        <expression>SAS_FILESRC.F2</expression>
+      </expression>
+    </field>
     <constraint id="_n2-XNIq4Ee6eAd0POgdy0A" name="PK_CLE_CLIENT" ref="resource.md#_jlWgO5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT?" reject="true"/>
-    <constraint id="_81LTwJAnEe69cu6-bNESsg" name="FK_ID_FICHIER1" ref="resource.md#_umXEoJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER1?" reject="true"/>
+    <constraint id="_81LTwJAnEe69cu6-bNESsg" name="FK_ID_FICHIER1" ref="resource.md#_umXEoJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER1?" reject="false"/>
     <constraint id="_81LTwZAnEe69cu6-bNESsg" name="FK_CLE_COMPTE" ref="resource.md#_umWdkJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_COMPTE?" reject="true"/>
+    <constraint id="_7Z0v1ZWoEe6KJ9B1NiSMNg" name="STATUS" ref="resource.md#_zaW-4ZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" reject="true"/>
+    <constraint id="_7Z0v1pWoEe6KJ9B1NiSMNg" name="ACTION" ref="resource.md#_mzWbEZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
+    <constraint id="_7Z0v15WoEe6KJ9B1NiSMNg" name="type_ligne" ref="resource.md#_aqcvkZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=type_ligne?" reject="true"/>
     <setDescriptor id="_n2-XOIq4Ee6eAd0POgdy0A" label="A"/>
   </datastore>
   <datastore id="_n2-XPYq4Ee6eAd0POgdy0A" alias="TRANSCO_type" dataset="_RINqMoq5Ee6eAd0POgdy0A" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
@@ -140,7 +148,7 @@
     <expression>TRANSCO_mutuelle.TYPE = 'MUTUELLE'</expression>
   </filter>
   <template id="_vthWcJAmEe69cu6-bNESsg" name="I_SAS_CLIENT" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_n2-XGIq4Ee6eAd0POgdy0A"/>
-  <template id="_wbNi4JAmEe69cu6-bNESsg" name="R_SAS_CLIENT" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_n2-XGIq4Ee6eAd0POgdy0A"/>
+  <template id="_PrCSUJXBEe6KJ9B1NiSMNg" name="R_SAS_CLIENT" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_n2-XGIq4Ee6eAd0POgdy0A"/>
   <dataSet id="_RINqMoq5Ee6eAd0POgdy0A">
     <container>_n2-XCYq4Ee6eAd0POgdy0A</container>
     <container>_n2-XRYq4Ee6eAd0POgdy0A</container>
@@ -160,6 +168,7 @@
     <usedField>#_n2-XDoq4Ee6eAd0POgdy0A</usedField>
     <usedField>#_n2-XD4q4Ee6eAd0POgdy0A</usedField>
     <usedField>#_n2-XEIq4Ee6eAd0POgdy0A</usedField>
+    <usedField>#_n2-XEYq4Ee6eAd0POgdy0A</usedField>
     <usedField>#_n2-XEoq4Ee6eAd0POgdy0A</usedField>
     <usedField>#_n2-XE4q4Ee6eAd0POgdy0A</usedField>
     <usedField>#_n2-XFIq4Ee6eAd0POgdy0A</usedField>

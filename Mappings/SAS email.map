@@ -8,7 +8,7 @@
     <field id="_eb7PppAiEe69cu6-bNESsg" fullAlias="F4" name="F4" ref="resource.md#_j8QkaJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F4?"/>
     <field id="_eb7PrpAiEe69cu6-bNESsg" name="F12" ref="resource.md#_j8QkmJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F12?"/>
     <field id="_eb7PqpAiEe69cu6-bNESsg" name="F8" ref="resource.md#_j8QkgJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
-    <field id="_eb7PpJAiEe69cu6-bNESsg" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
+    <field id="_eb7PpJAiEe69cu6-bNESsg" fullAlias="F2" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
     <field id="_eb7PsJAiEe69cu6-bNESsg" name="DATE_IMPORT" ref="resource.md#_j8QkpJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
     <field id="_eb7Po5AiEe69cu6-bNESsg" fullAlias="F1" name="F1" ref="resource.md#_j8QkVpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F1?"/>
     <field id="_eb7Pp5AiEe69cu6-bNESsg" fullAlias="F5" name="F5" ref="resource.md#_j8QkbpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F5?"/>
@@ -43,10 +43,16 @@
         <expression>TRANSCO_status.LIBELLE</expression>
       </expression>
     </field>
+    <field id="_HTV7hpWpEe6KJ9B1NiSMNg" enable="true" insert="true" name="ACT" ref="resource.md#_0wYTjZWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?" update="true">
+      <expression id="_HTV7h5WpEe6KJ9B1NiSMNg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
+        <expression>SAS_FILESRC.F2</expression>
+      </expression>
+    </field>
     <constraint id="_wq5SwZAoEe69cu6-bNESsg" name="PK_CLE_CLIENT2" ref="resource.md#_j44gMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT2?" reject="true"/>
     <constraint id="_wq550JAoEe69cu6-bNESsg" name="FK_CLE_CLIENT2" ref="resource.md#_uoFi8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT2?" reject="true"/>
     <constraint id="_wq550ZAoEe69cu6-bNESsg" name="FK_ID_FICHIER2" ref="resource.md#_uoE74JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2?" reject="true"/>
     <constraint id="_jHB5vZAuEe69cu6-bNESsg" name="REJET_EMAIL" ref="resource.md#_ohz5gZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=REJET_EMAIL?" reject="true"/>
+    <constraint id="_nFmzR5WpEe6KJ9B1NiSMNg" name="Status" ref="resource.md#_QKydUZWpEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
     <setDescriptor id="_h2i8YJAiEe69cu6-bNESsg" label="A"/>
   </datastore>
   <datastore id="_pK_aYJAiEe69cu6-bNESsg" alias="TRANSCO_status" dataset="_pK_aaJAiEe69cu6-bNESsg" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
@@ -87,6 +93,7 @@
   <hint>
     <usedField>#_eb7PpZAiEe69cu6-bNESsg</usedField>
     <usedField>#_eb7PppAiEe69cu6-bNESsg</usedField>
+    <usedField>#_eb7PpJAiEe69cu6-bNESsg</usedField>
     <usedField>#_eb7Po5AiEe69cu6-bNESsg</usedField>
     <usedField>#_eb7Pp5AiEe69cu6-bNESsg</usedField>
     <usedField>#_eb7PopAiEe69cu6-bNESsg</usedField>

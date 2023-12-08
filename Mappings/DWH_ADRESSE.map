@@ -14,9 +14,12 @@
     <field id="_BYTMwpBAEe69cu6-bNESsg" fullAlias="VILLE" name="VILLE" ref="resource.md#_uW1a5pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=VILLE?"/>
     <field id="_BYTMw5BAEe69cu6-bNESsg" fullAlias="CODE_POSTAL" name="CODE_POSTAL" ref="resource.md#_uW1a7JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE_POSTAL?"/>
     <field id="_BYSls5BAEe69cu6-bNESsg" fullAlias="LIGNE_3" name="LIGNE_3" ref="resource.md#_uW0z1pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_3?"/>
+    <field id="_SY1p2pXOEe6KJ9B1NiSMNg" name="ACT" ref="resource.md#_0qGsVpWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
     <constraint id="_BYTz1JBAEe69cu6-bNESsg" name="FK_CLE_CLIENT3" ref="resource.md#_unj-gJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT3?" reject="true"/>
     <constraint id="_BYTz1ZBAEe69cu6-bNESsg" name="FK_ID_FICHIER3" ref="resource.md#_unjXcJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3?" reject="true"/>
     <constraint id="_BYTz1pBAEe69cu6-bNESsg" name="PK_CLE_CLIENT3" ref="resource.md#_uW66cJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT3?" reject="true"/>
+    <constraint id="_SY1p25XOEe6KJ9B1NiSMNg" name="ACTION" ref="resource.md#_KbHvUZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
+    <constraint id="_SY1p3JXOEe6KJ9B1NiSMNg" name="STATUS" ref="resource.md#_SiJg0ZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" reject="true"/>
   </datastore>
   <datastore id="_BpfqcJBAEe69cu6-bNESsg" alias="DWH_ADRESSE" control="true" dataset="_BpjU0JBAEe69cu6-bNESsg" ref="resource.md#_kY7_oZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_ADRESSE?" subExpression="[A]">
     <field id="_BphfopBAEe69cu6-bNESsg" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_keVdAJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ID_FICHIER?" update="true">
@@ -89,7 +92,7 @@
         <expression>SAS_ADRESSE.VILLE</expression>
       </expression>
     </field>
-    <constraint id="_BphfpZBAEe69cu6-bNESsg" name="FK_ID_FICHIER2_DWH" ref="resource.md#_kq7HgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2_DWH?" reject="true"/>
+    <constraint id="_BphfpZBAEe69cu6-bNESsg" name="FK_ID_FICHIER2_DWH" ref="resource.md#_kq7HgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2_DWH?" reject="false"/>
     <constraint id="_BpiGsJBAEe69cu6-bNESsg" name="PK_SID_CLIENT2_DWH" ref="resource.md#_keaVgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT2_DWH?" reject="false"/>
     <constraint id="_BpiGsZBAEe69cu6-bNESsg" name="FK_SID_CLIENT2_DWH" ref="resource.md#_kq6gcJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_CLIENT2_DWH?" reject="true"/>
     <setDescriptor id="_C7SpgJBAEe69cu6-bNESsg" label="A"/>

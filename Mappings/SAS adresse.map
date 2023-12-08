@@ -7,7 +7,7 @@
     <field id="_2Nc8Z5AoEe69cu6-bNESsg" fullAlias="F7" name="F7" ref="resource.md#_j8QkepAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
     <field id="_2Nc8aJAoEe69cu6-bNESsg" fullAlias="F8" name="F8" ref="resource.md#_j8QkgJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F8?"/>
     <field id="_2Nc8aZAoEe69cu6-bNESsg" fullAlias="F9" name="F9" ref="resource.md#_j8QkhpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F9?"/>
-    <field id="_2Nc8YpAoEe69cu6-bNESsg" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
+    <field id="_2Nc8YpAoEe69cu6-bNESsg" fullAlias="F2" name="F2" ref="resource.md#_j8QkXJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F2?"/>
     <field id="_2Nc8YJAoEe69cu6-bNESsg" fullAlias="FILE_NOM" name="FILE_NOM" ref="resource.md#_j8QkUJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FILE_NOM?"/>
     <field id="_2Nc8bpAoEe69cu6-bNESsg" name="DATE_IMPORT" ref="resource.md#_j8QkpJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
     <field id="_2Nc8ZJAoEe69cu6-bNESsg" fullAlias="F4" name="F4" ref="resource.md#_j8QkaJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F4?"/>
@@ -17,7 +17,7 @@
     <field id="_2Nc8a5AoEe69cu6-bNESsg" fullAlias="F11" name="F11" ref="resource.md#_j8QkkpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F11?"/>
     <field id="_2Nc8bZAoEe69cu6-bNESsg" fullAlias="F13" name="F13" ref="resource.md#_j8QknpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F13?"/>
   </datastore>
-  <datastore id="_6C8AMJAoEe69cu6-bNESsg" alias="SAS_ADRESSE" dataset="_6DARoJAoEe69cu6-bNESsg" ref="resource.md#_uRfA0ZAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_ADRESSE?" subExpression="[A]">
+  <datastore id="_6C8AMJAoEe69cu6-bNESsg" alias="SAS_ADRESSE" control="true" dataset="_6DARoJAoEe69cu6-bNESsg" ref="resource.md#_uRfA0ZAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_ADRESSE?" subExpression="[A]">
     <field id="_6C8AOJAoEe69cu6-bNESsg" enable="true" insert="true" name="LIGNE_5" ref="resource.md#_uW1a4JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_5?" update="true">
       <expression id="_6wiGAZAoEe69cu6-bNESsg" setDescriptorRef="_6wiGAJAoEe69cu6-bNESsg">
         <expression>SAS_FILESRC.F9</expression>
@@ -83,9 +83,16 @@
         <expression>SAS_FILESRC.F7</expression>
       </expression>
     </field>
+    <field id="_GEj-zpWqEe6KJ9B1NiSMNg" enable="true" insert="true" name="ACT" ref="resource.md#_0qGsVpWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?" update="true">
+      <expression id="_GEj-z5WqEe6KJ9B1NiSMNg" setDescriptorRef="_6wiGAJAoEe69cu6-bNESsg">
+        <expression>SAS_FILESRC.F2</expression>
+      </expression>
+    </field>
     <constraint id="_6C8AP5AoEe69cu6-bNESsg" name="PK_CLE_CLIENT3" ref="resource.md#_uW66cJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT3?" reject="true"/>
     <constraint id="_6C8AQJAoEe69cu6-bNESsg" name="FK_CLE_CLIENT3" ref="resource.md#_unj-gJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT3?" reject="true"/>
     <constraint id="_6C8AQZAoEe69cu6-bNESsg" name="FK_ID_FICHIER3" ref="resource.md#_unjXcJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3?" reject="true"/>
+    <constraint id="_stUNNZWqEe6KJ9B1NiSMNg" name="STATUS" ref="resource.md#_SiJg0ZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" reject="true"/>
+    <constraint id="_stUNNpWqEe6KJ9B1NiSMNg" name="ACTION" ref="resource.md#_KbHvUZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
     <setDescriptor id="_6wiGAJAoEe69cu6-bNESsg" label="A"/>
   </datastore>
   <datastore id="_7jChAJAoEe69cu6-bNESsg" alias="TRANSCO_status" dataset="_7jChCJAoEe69cu6-bNESsg" ref="resource.md#_jlWgP5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TRANSCO?">
@@ -134,6 +141,7 @@
     <expression>TRANSCO_qualite.TYPE = 'QUALITE'</expression>
   </filter>
   <template id="_6wiGIZAoEe69cu6-bNESsg" name="I_SAS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_6C8AMJAoEe69cu6-bNESsg"/>
+  <template id="_9BMEVZWqEe6KJ9B1NiSMNg" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_6C8AMJAoEe69cu6-bNESsg"/>
   <dataSet id="_6DARoJAoEe69cu6-bNESsg">
     <container>_6C8AMJAoEe69cu6-bNESsg</container>
   </dataSet>
@@ -151,6 +159,7 @@
     <usedField>#_2Nc8Z5AoEe69cu6-bNESsg</usedField>
     <usedField>#_2Nc8aJAoEe69cu6-bNESsg</usedField>
     <usedField>#_2Nc8aZAoEe69cu6-bNESsg</usedField>
+    <usedField>#_2Nc8YpAoEe69cu6-bNESsg</usedField>
     <usedField>#_2Nc8YJAoEe69cu6-bNESsg</usedField>
     <usedField>#_2Nc8ZJAoEe69cu6-bNESsg</usedField>
     <usedField>#_2Nc8bJAoEe69cu6-bNESsg</usedField>

@@ -33,7 +33,7 @@
     </field>
     <constraint id="_TBhtSJBAEe69cu6-bNESsg" name="PK_SID_CLIENT1_DWH" ref="resource.md#_kj0Z8JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT1_DWH?" reject="false"/>
     <constraint id="_TBhtSZBAEe69cu6-bNESsg" name="FK_SID_CLIENT1_DWH" ref="resource.md#_kra2wJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_CLIENT1_DWH?" reject="true"/>
-    <constraint id="_TBhtSpBAEe69cu6-bNESsg" name="FK_ID_FICHIER1_DWH" ref="resource.md#_krbd0JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER1_DWH?" reject="true"/>
+    <constraint id="_TBhtSpBAEe69cu6-bNESsg" name="FK_ID_FICHIER1_DWH" ref="resource.md#_krbd0JAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER1_DWH?" reject="false"/>
     <setDescriptor id="_UjOJgJBAEe69cu6-bNESsg" label="A"/>
   </datastore>
   <datastore id="_TXYBcJBAEe69cu6-bNESsg" alias="SAS_EMAIL" dataset="_TXeIGZBAEe69cu6-bNESsg" ref="resource.md#_jzfp-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_EMAIL?">
@@ -42,10 +42,13 @@
     <field id="_TXYBc5BAEe69cu6-bNESsg" fullAlias="EMAIL" name="EMAIL" ref="resource.md#_j4uvNpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=EMAIL?"/>
     <field id="_TXYBdJBAEe69cu6-bNESsg" fullAlias="STATUS_EMAIL" name="STATUS_EMAIL" ref="resource.md#_j4uvPJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS_EMAIL?"/>
     <field id="_TXYBdpBAEe69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_j4uvR5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
+    <field id="_UzfHPZXOEe6KJ9B1NiSMNg" name="ACT" ref="resource.md#_0wYTjZWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
     <constraint id="_TXeIEJBAEe69cu6-bNESsg" name="PK_CLE_CLIENT2" ref="resource.md#_j44gMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT2?" reject="true"/>
     <constraint id="_TXeIEZBAEe69cu6-bNESsg" name="FK_ID_FICHIER2" ref="resource.md#_uoE74JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2?" reject="true"/>
     <constraint id="_TXeIEpBAEe69cu6-bNESsg" name="FK_CLE_CLIENT2" ref="resource.md#_uoFi8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT2?" reject="true"/>
     <constraint id="_TXeIE5BAEe69cu6-bNESsg" name="REJET_EMAIL" ref="resource.md#_ohz5gZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=REJET_EMAIL?" reject="true"/>
+    <constraint id="_UzfHPpXOEe6KJ9B1NiSMNg" name="action" ref="resource.md#_YI-xAZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=action?" reject="true"/>
+    <constraint id="_UzfHP5XOEe6KJ9B1NiSMNg" name="Status" ref="resource.md#_QKydUZWpEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
   </datastore>
   <datastore id="_T24n8JBAEe69cu6-bNESsg" alias="DWH_CLIENT" dataset="_TXeIGZBAEe69cu6-bNESsg" ref="resource.md#_kj22MZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_CLIENT?">
     <field id="_T24n9JBAEe69cu6-bNESsg" name="SID_COMPTE" ref="resource.md#_kpLbEJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SID_COMPTE?"/>
