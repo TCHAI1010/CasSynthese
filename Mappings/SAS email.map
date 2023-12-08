@@ -17,7 +17,7 @@
     <field id="_eb7PqZAiEe69cu6-bNESsg" name="F7" ref="resource.md#_j8QkepAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F7?"/>
     <field id="_eb7PrJAiEe69cu6-bNESsg" name="F10" ref="resource.md#_j8QkjJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=F10?"/>
   </datastore>
-  <datastore id="_e_VesJAiEe69cu6-bNESsg" alias="SAS_EMAIL" control="true" dataset="_e_fPtJAiEe69cu6-bNESsg" ref="resource.md#_jzfp-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_EMAIL?" subExpression="[A]">
+  <datastore id="_e_VesJAiEe69cu6-bNESsg" alias="SAS_EMAIL" control="false" dataset="_e_fPtJAiEe69cu6-bNESsg" ref="resource.md#_jzfp-5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_EMAIL?" subExpression="[A]">
     <field id="_e_Ves5AiEe69cu6-bNESsg" enable="true" insert="true" name="EMAIL" ref="resource.md#_j4uvNpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=EMAIL?" update="true">
       <expression id="_h2i8YZAiEe69cu6-bNESsg" setDescriptorRef="_h2i8YJAiEe69cu6-bNESsg">
         <expression>SAS_FILESRC.F4</expression>
@@ -49,8 +49,6 @@
       </expression>
     </field>
     <constraint id="_wq5SwZAoEe69cu6-bNESsg" name="PK_CLE_CLIENT2" ref="resource.md#_j44gMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT2?" reject="true"/>
-    <constraint id="_wq550JAoEe69cu6-bNESsg" name="FK_CLE_CLIENT2" ref="resource.md#_uoFi8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT2?" reject="true"/>
-    <constraint id="_wq550ZAoEe69cu6-bNESsg" name="FK_ID_FICHIER2" ref="resource.md#_uoE74JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2?" reject="true"/>
     <constraint id="_jHB5vZAuEe69cu6-bNESsg" name="REJET_EMAIL" ref="resource.md#_ohz5gZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=REJET_EMAIL?" reject="true"/>
     <constraint id="_nFmzR5WpEe6KJ9B1NiSMNg" name="Status" ref="resource.md#_QKydUZWpEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
     <constraint id="_Vvms2JXVEe6GyNaUiuph4Q" name="action" ref="resource.md#_YI-xAZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=action?" reject="true"/>
@@ -67,8 +65,8 @@
     <field id="_9k5Sw5AiEe69cu6-bNESsg" fullAlias="NOM_FICHIER" name="NOM_FICHIER" ref="resource.md#_juUO9ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM_FICHIER?"/>
     <constraint id="_wNRioJAoEe69cu6-bNESsg" name="PK_ID_FICHIER" ref="resource.md#_jua8oJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_ID_FICHIER?" reject="true"/>
   </datastore>
-  <join id="_rVJk0JAiEe69cu6-bNESsg" location="SRC" left="_eb7PoJAiEe69cu6-bNESsg" order="10" right="_pK_aYJAiEe69cu6-bNESsg">
-    <expression>SAS_FILESRC.F5 = TRANSCO_status.CODE</expression>
+  <join id="_rVJk0JAiEe69cu6-bNESsg" location="SRC" joinType="Left_Join" left="_eb7PoJAiEe69cu6-bNESsg" order="10" right="_pK_aYJAiEe69cu6-bNESsg">
+    <expression>SAS_FILESRC.F5 = TRANSCO_status.CODE AND TRANSCO_status.TYPE = 'STATUS_EMAIL'</expression>
   </join>
   <join id="_-VebIJAiEe69cu6-bNESsg" location="SRC" left="_9k5SwJAiEe69cu6-bNESsg" order="30" right="_eb7PoJAiEe69cu6-bNESsg">
     <expression>SOURCE.NOM_FICHIER = SAS_FILESRC.FILE_NOM</expression>
@@ -76,13 +74,9 @@
   <filter id="_lSeQsJAiEe69cu6-bNESsg" location="SRC">
     <expression>SAS_FILESRC.F1 = '203'</expression>
   </filter>
-  <filter id="_qtcroJAiEe69cu6-bNESsg" location="SRC">
-    <expression>TRANSCO_status.TYPE = 'STATUS_EMAIL'</expression>
-  </filter>
   <template id="_wNTX0JAoEe69cu6-bNESsg" name="I_SAS_EMAIL" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_e_VesJAiEe69cu6-bNESsg">
     <parameter id="_VzcZEJAxEe69cu6-bNESsg" name="truncateTargetTable" value="true"/>
   </template>
-  <template id="_wqsecJAoEe69cu6-bNESsg" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_e_VesJAiEe69cu6-bNESsg"/>
   <dataSet id="_e_fPtJAiEe69cu6-bNESsg">
     <container>_e_VesJAiEe69cu6-bNESsg</container>
   </dataSet>
@@ -133,13 +127,6 @@
     <children xmi:type="notation:BasicCompartment" xmi:id="_pLFhDpAiEe69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_pK_aYJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pLFhAZAiEe69cu6-bNESsg" x="558" y="98"/>
-  </children>
-  <children xmi:type="notation:Node" xmi:id="_qtr8MJAiEe69cu6-bNESsg" type="2002">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_qtr8MZAiEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_qtr8MpAiEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_qtr8M5AiEe69cu6-bNESsg"/>
-    <element xmi:type="map:Filter" href="resource.map#_qtcroJAiEe69cu6-bNESsg?fileId=_dv0-oJAiEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qtr8NJAiEe69cu6-bNESsg" x="745" y="126"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_rVPrdZAiEe69cu6-bNESsg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_rVPrdpAiEe69cu6-bNESsg"/>
@@ -228,10 +215,6 @@
   <edges xmi:type="notation:Edge" xmi:id="_lSoBu5AiEe69cu6-bNESsg" type="joinLink" source="_lSoBtpAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lSoBvJAiEe69cu6-bNESsg" points="[0, 0, -381, -305]$[299, 239, -82, -66]"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_qtr8NZAiEe69cu6-bNESsg" type="joinLink" source="_qtr8MJAiEe69cu6-bNESsg" target="_pLFhAJAiEe69cu6-bNESsg">
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qtr8NpAiEe69cu6-bNESsg" points="[0, 0, -732, -441]$[667, 402, -65, -39]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_rVPrepAiEe69cu6-bNESsg" type="joinLink" source="_rVPrdZAiEe69cu6-bNESsg" target="_ecAvPJAiEe69cu6-bNESsg">
     <element xsi:nil="true"/>

@@ -38,7 +38,7 @@
     <field id="_ZwlUI5AdEe69cu6-bNESsg" fullAlias="NOM_FICHIER" name="NOM_FICHIER" ref="resource.md#_juUO9ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=NOM_FICHIER?"/>
     <constraint id="_qrBbEpAoEe69cu6-bNESsg" name="PK_ID_FICHIER" ref="resource.md#_jua8oJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_ID_FICHIER?" reject="true"/>
   </datastore>
-  <datastore id="_H7ZpAJAiEe69cu6-bNESsg" alias="SAS_TEL" control="true" dataset="_H7cFQJAiEe69cu6-bNESsg" ref="resource.md#_j8Wq8ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_TEL?" subExpression="[A]">
+  <datastore id="_H7ZpAJAiEe69cu6-bNESsg" alias="SAS_TEL" control="false" dataset="_H7cFQJAiEe69cu6-bNESsg" ref="resource.md#_j8Wq8ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_TEL?" subExpression="[A]">
     <field id="_H7aQEpAiEe69cu6-bNESsg" enable="true" insert="true" name="FAVORI" ref="resource.md#_kBr24JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FAVORI?" update="true">
       <expression id="_K-8SgJAiEe69cu6-bNESsg" setDescriptorRef="_K-7rcJAiEe69cu6-bNESsg">
         <expression>TRANSCO_favori.LIBELLE</expression>
@@ -79,9 +79,7 @@
         <expression>SAS_FILESRC.F2</expression>
       </expression>
     </field>
-    <constraint id="_rL4FUpAoEe69cu6-bNESsg" name="FK_ID_FICHIER4" ref="resource.md#_uovqQJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER4?" reject="true"/>
     <constraint id="_rL4FU5AoEe69cu6-bNESsg" name="PK_CLE_CLIENT4" ref="resource.md#_kBr295AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT4?" reject="true"/>
-    <constraint id="_rL4FVJAoEe69cu6-bNESsg" name="FK_CLE_CLIENT4" ref="resource.md#_uovqRJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT4?" reject="true"/>
     <constraint id="_GJZJhZWsEe6KJ9B1NiSMNg" name="status" ref="resource.md#_jK3KEZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=status?" reject="true"/>
     <constraint id="_GJZJhpWsEe6KJ9B1NiSMNg" name="favori" ref="resource.md#_3iOr0ZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=favori?" reject="true"/>
     <constraint id="_GJZJh5WsEe6KJ9B1NiSMNg" name="telephone renseigne" ref="resource.md#_e4jnYZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=telephone%20renseigne?" reject="true"/>
@@ -90,14 +88,14 @@
     <constraint id="_tlC0gJWsEe6KJ9B1NiSMNg" name="format telephone" ref="resource.md#_bSLhIZWsEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=format%20telephone?" reject="true"/>
     <setDescriptor id="_K-7rcJAiEe69cu6-bNESsg" label="A"/>
   </datastore>
-  <join id="_3XgLIJAcEe69cu6-bNESsg" location="SRC" left="_puqzYJAbEe69cu6-bNESsg" order="10" right="_08HjQJAbEe69cu6-bNESsg">
-    <expression>SAS_FILESRC.F5 = TRANSCO_status.CODE</expression>
+  <join id="_3XgLIJAcEe69cu6-bNESsg" location="SRC" joinType="Left_Join" left="_puqzYJAbEe69cu6-bNESsg" order="10" right="_08HjQJAbEe69cu6-bNESsg">
+    <expression>SAS_FILESRC.F5 = TRANSCO_status.CODE AND TRANSCO_status.TYPE = 'STATUS_TELEPHONE'</expression>
   </join>
-  <join id="_Fj9CwJAdEe69cu6-bNESsg" location="SRC" left="_puqzYJAbEe69cu6-bNESsg" order="30" right="_CsWjgJAdEe69cu6-bNESsg">
-    <expression>SAS_FILESRC.F6 = TRANSCO_favori.CODE</expression>
+  <join id="_Fj9CwJAdEe69cu6-bNESsg" location="SRC" joinType="Left_Join" left="_puqzYJAbEe69cu6-bNESsg" order="30" right="_CsWjgJAdEe69cu6-bNESsg">
+    <expression>SAS_FILESRC.F6 = TRANSCO_favori.CODE AND TRANSCO_favori.TYPE = 'FAVORI'</expression>
   </join>
-  <join id="_UWJEsJAdEe69cu6-bNESsg" location="SRC" left="_puqzYJAbEe69cu6-bNESsg" order="50" right="_SPaBsJAdEe69cu6-bNESsg">
-    <expression>SAS_FILESRC.F7 = TRANSCO_type.CODE</expression>
+  <join id="_UWJEsJAdEe69cu6-bNESsg" location="SRC" joinType="Left_Join" left="_puqzYJAbEe69cu6-bNESsg" order="50" right="_SPaBsJAdEe69cu6-bNESsg">
+    <expression>SAS_FILESRC.F7 = TRANSCO_type.CODE AND TRANSCO_type.TYPE = 'TYPE_TELEPHONE'</expression>
   </join>
   <join id="_cFhLMJAdEe69cu6-bNESsg" location="SRC" left="_puqzYJAbEe69cu6-bNESsg" order="70" right="_ZwlUIJAdEe69cu6-bNESsg">
     <expression>SAS_FILESRC.FILE_NOM = SOURCE.NOM_FICHIER</expression>
@@ -105,19 +103,9 @@
   <filter id="_S5mDoJAcEe69cu6-bNESsg" location="SRC">
     <expression>SAS_FILESRC.F1 = '205'</expression>
   </filter>
-  <filter id="_5P86gJAcEe69cu6-bNESsg" location="SRC">
-    <expression>TRANSCO_status.TYPE = 'STATUS_TELEPHONE'</expression>
-  </filter>
-  <filter id="_OjAocJAdEe69cu6-bNESsg" location="SRC">
-    <expression>TRANSCO_favori.TYPE = 'FAVORI'</expression>
-  </filter>
-  <filter id="_VDONIJAdEe69cu6-bNESsg" location="SRC">
-    <expression>TRANSCO_type.TYPE = 'TYPE_TELEPHONE'</expression>
-  </filter>
   <template id="_qrBbGZAoEe69cu6-bNESsg" name="I_SAS_TEL" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_H7ZpAJAiEe69cu6-bNESsg">
     <parameter id="_JrhdkJXaEe6GyNaUiuph4Q" name="truncateTargetTable" value="true"/>
   </template>
-  <template id="_rLfDxZAoEe69cu6-bNESsg" name="R_SAS_TEL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_H7ZpAJAiEe69cu6-bNESsg"/>
   <dataSet id="_kQrEMJAcEe69cu6-bNESsg">
     <container>_08HjQJAbEe69cu6-bNESsg</container>
     <container>_puqzYJAbEe69cu6-bNESsg</container>
@@ -209,13 +197,6 @@
     <element xmi:type="map:Datastore" href="resource.map#_08HjQJAbEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_08HjVpAbEe69cu6-bNESsg" x="616" y="163"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_5QJHwJAcEe69cu6-bNESsg" type="2002">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_5QJHwZAcEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_5QJHwpAcEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_5QJHw5AcEe69cu6-bNESsg"/>
-    <element xmi:type="map:Filter" href="resource.map#_5P86gJAcEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5QJHxJAcEe69cu6-bNESsg" x="832" y="205"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_CscqJ5AdEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_CscqKZAdEe69cu6-bNESsg" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_CscqKpAdEe69cu6-bNESsg" type="5007"/>
@@ -235,13 +216,6 @@
     <children xmi:type="notation:BasicCompartment" xmi:id="_CscqNZAdEe69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_CsWjgJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CscqKJAdEe69cu6-bNESsg" x="628" y="313"/>
-  </children>
-  <children xmi:type="notation:Node" xmi:id="_OjQgEJAdEe69cu6-bNESsg" type="2002">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_OjQgEZAdEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_OjQgEpAdEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_OjQgE5AdEe69cu6-bNESsg"/>
-    <element xmi:type="map:Filter" href="resource.map#_OjAocJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OjQgFJAdEe69cu6-bNESsg" x="854" y="331"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_SPpSQJAdEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_SPpSQpAdEe69cu6-bNESsg" type="5005"/>
@@ -270,46 +244,12 @@
     <element xmi:type="map:Join" href="resource.map#_UWJEsJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UWYVRJAdEe69cu6-bNESsg" x="502" y="346"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_VDeEwJAdEe69cu6-bNESsg" type="2002">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_VDeEwZAdEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_VDeEwpAdEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_VDeEw5AdEe69cu6-bNESsg"/>
-    <element xmi:type="map:Filter" href="resource.map#_VDONIJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VDeExJAdEe69cu6-bNESsg" x="886" y="456"/>
-  </children>
-  <children xmi:type="notation:Node" xmi:id="_cF3JcJAdEe69cu6-bNESsg" type="2005">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_cF3JcZAdEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_cF3JcpAdEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_cF3Jc5AdEe69cu6-bNESsg"/>
-    <element xmi:type="map:Join" href="resource.map#_cFhLMJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cF3JdJAdEe69cu6-bNESsg" x="563" y="574"/>
-  </children>
   <children xmi:type="notation:Node" xmi:id="_FkWrYJAdEe69cu6-bNESsg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_FkWrYZAdEe69cu6-bNESsg"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_FkWrYpAdEe69cu6-bNESsg" fontName="Segoe UI"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_FkWrY5AdEe69cu6-bNESsg"/>
     <element xmi:type="map:Join" href="resource.map#_Fj9CwJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FkWrZJAdEe69cu6-bNESsg" x="496" y="304"/>
-  </children>
-  <children xmi:type="notation:Shape" xmi:id="_Zw1LwJAdEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LwpAdEe69cu6-bNESsg" type="5005"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1Lw5AdEe69cu6-bNESsg" type="5007"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LxJAdEe69cu6-bNESsg" type="7003"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LxZAdEe69cu6-bNESsg" type="7009"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_Zw1LxpAdEe69cu6-bNESsg" type="7004">
-      <styles xmi:type="notation:SortingStyle" xmi:id="_Zw1Lx5AdEe69cu6-bNESsg"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_Zw1LyJAdEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LyZAdEe69cu6-bNESsg" type="5009">
-      <styles xmi:type="notation:DrawerStyle" xmi:id="_Zw1LypAdEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1Ly5AdEe69cu6-bNESsg" type="7005">
-      <styles xmi:type="notation:SortingStyle" xmi:id="_Zw1LzJAdEe69cu6-bNESsg"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_Zw1LzZAdEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_Zw1LzpAdEe69cu6-bNESsg" type="7007"/>
-    <element xmi:type="map:Datastore" href="resource.map#_ZwlUIJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zw1LwZAdEe69cu6-bNESsg" x="959" y="525"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_H7pgoJAiEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_H7pgopAiEe69cu6-bNESsg" type="5005"/>
@@ -330,6 +270,33 @@
     <children xmi:type="notation:BasicCompartment" xmi:id="_H7pgrpAiEe69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_H7ZpAJAiEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H7pgoZAiEe69cu6-bNESsg" x="1122" y="180"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Zw1LwJAdEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LwpAdEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1Lw5AdEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LxJAdEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LxZAdEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Zw1LxpAdEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Zw1Lx5AdEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Zw1LyJAdEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1LyZAdEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_Zw1LypAdEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Zw1Ly5AdEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Zw1LzJAdEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Zw1LzZAdEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Zw1LzpAdEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_ZwlUIJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zw1LwZAdEe69cu6-bNESsg" x="578" y="550"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_cF3JcJAdEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_cF3JcZAdEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cF3JcpAdEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_cF3Jc5AdEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_cFhLMJAdEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cF3JdJAdEe69cu6-bNESsg" x="402" y="487"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_ax9jgZAbEe69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#_axJEIJAbEe69cu6-bNESsg?fileId=_axJEIJAbEe69cu6-bNESsg$type=map$name=SAS%20telephone?"/>
@@ -353,10 +320,6 @@
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FkWraJAdEe69cu6-bNESsg" points="[-1, -1, -300, -240]$[217, 173, -82, -66]"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_OjQgFZAdEe69cu6-bNESsg" type="joinLink" source="_OjQgEJAdEe69cu6-bNESsg" target="_CscqJ5AdEe69cu6-bNESsg">
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OjQgFpAdEe69cu6-bNESsg" points="[0, 0, -627, -426]$[563, 383, -64, -43]"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="_UWYVRZAdEe69cu6-bNESsg" type="joinLink" source="_UWYVQJAdEe69cu6-bNESsg" target="_pu9uUpAbEe69cu6-bNESsg">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UWYVRpAdEe69cu6-bNESsg" points="[-1, -1, -300, -240]$[217, 173, -82, -66]"/>
@@ -365,10 +328,6 @@
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UWiGQZAdEe69cu6-bNESsg" points="[-1, -1, -689, -465]$[623, 420, -65, -44]"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_VDeExZAdEe69cu6-bNESsg" type="joinLink" source="_VDeEwJAdEe69cu6-bNESsg" target="_SPpSQJAdEe69cu6-bNESsg">
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VDeExpAdEe69cu6-bNESsg" points="[0, 0, -688, -464]$[623, 420, -65, -44]"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="_cF3JdZAdEe69cu6-bNESsg" type="joinLink" source="_cF3JcJAdEe69cu6-bNESsg" target="_pu9uUpAbEe69cu6-bNESsg">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cF3JdpAdEe69cu6-bNESsg" points="[-1, -1, -300, -240]$[217, 173, -82, -66]"/>
@@ -376,10 +335,6 @@
   <edges xmi:type="notation:Edge" xmi:id="_cF3Jd5AdEe69cu6-bNESsg" type="joinLink" source="_cF3JcJAdEe69cu6-bNESsg" target="_Zw1LwJAdEe69cu6-bNESsg">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cF3JeJAdEe69cu6-bNESsg" points="[8, 10, -234, -256]$[202, 223, -40, -43]"/>
-  </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_07AzMJAfEe69cu6-bNESsg" type="joinLink" source="_5QJHwJAcEe69cu6-bNESsg" target="_08HjVZAbEe69cu6-bNESsg">
-    <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_07AzMZAfEe69cu6-bNESsg" points="[-15, -2, 143, 12]$[-84, -8, 74, 6]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_K_N_UJAiEe69cu6-bNESsg" type="targetLink" source="_H7pgoJAiEe69cu6-bNESsg" target="_pu9uUpAbEe69cu6-bNESsg">
     <element xsi:nil="true"/>

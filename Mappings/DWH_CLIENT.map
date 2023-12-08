@@ -90,9 +90,11 @@
     <field id="_CD32IJA8Ee69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_jlWgNZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
     <field id="_CD2A8JA8Ee69cu6-bNESsg" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_jlQZkJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_CLIENT?" updateKey="true"/>
     <field id="_CD3PEJA8Ee69cu6-bNESsg" fullAlias="PRENOM" name="PRENOM" ref="resource.md#_jlQZrpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PRENOM?"/>
+    <field id="_1CfXjJXuEe6SOL3_RBRvvg" name="ACT" ref="resource.md#_0e0Cl5WkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
     <constraint id="_CD32IZA8Ee69cu6-bNESsg" name="PK_CLE_CLIENT" ref="resource.md#_jlWgO5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT?" reject="true"/>
-    <constraint id="_CD32IpA8Ee69cu6-bNESsg" name="FK_CLE_COMPTE" ref="resource.md#_umWdkJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_COMPTE?" reject="true"/>
-    <constraint id="_CD32I5A8Ee69cu6-bNESsg" name="FK_ID_FICHIER1" ref="resource.md#_umXEoJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER1?" reject="true"/>
+    <constraint id="_1CfXjZXuEe6SOL3_RBRvvg" name="STATUS" ref="resource.md#_zaW-4ZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" reject="true"/>
+    <constraint id="_1Cf-kJXuEe6SOL3_RBRvvg" name="type_ligne" ref="resource.md#_aqcvkZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=type_ligne?" reject="true"/>
+    <constraint id="_1Cf-kZXuEe6SOL3_RBRvvg" name="ACTION" ref="resource.md#_mzWbEZWoEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
   </datastore>
   <datastore id="_bcxtMJA-Ee69cu6-bNESsg" alias="DWH_COMPTE" dataset="_bcxtRZA-Ee69cu6-bNESsg" ref="resource.md#_kNAccZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_COMPTE?">
     <field id="_bcxtOJA-Ee69cu6-bNESsg" name="DATE_IMPORT" ref="resource.md#_kSs0wJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
@@ -106,6 +108,8 @@
     <constraint id="_bcxtOpA-Ee69cu6-bNESsg" name="FK_ID_FICHIER_DWH" ref="resource.md#_kp2whJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER_DWH?" reject="true"/>
     <constraint id="_bcxtO5A-Ee69cu6-bNESsg" name="FK_CLE_COMPTE_DWH" ref="resource.md#_kp2wgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_COMPTE_DWH?" reject="true"/>
     <constraint id="_bcxtPJA-Ee69cu6-bNESsg" name="PK_SID_COMPTE_DWH" ref="resource.md#_kSyUUJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_COMPTE_DWH?" reject="true"/>
+    <constraint id="_1ChMt5XuEe6SOL3_RBRvvg" name="Status" ref="resource.md#_ANOHAZWhEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
+    <constraint id="_1ChMuJXuEe6SOL3_RBRvvg" name="Type_ligne" ref="resource.md#_HYwoAZWeEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Type_ligne?" reject="true"/>
   </datastore>
   <join id="_cgZGUJA-Ee69cu6-bNESsg" location="SRC" left="_CD1Z4JA8Ee69cu6-bNESsg" order="10" right="_bcxtMJA-Ee69cu6-bNESsg">
     <expression>SAS_CLIENT.CLE_COMPTE = DWH_COMPTE.CLE_COMPTE</expression>
@@ -197,14 +201,14 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_bdA9zpA-Ee69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_bcxtMJA-Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bdA9wZA-Ee69cu6-bNESsg" x="456" y="247"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bdA9wZA-Ee69cu6-bNESsg" x="370" y="311"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_cglTlZA-Ee69cu6-bNESsg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_cglTlpA-Ee69cu6-bNESsg"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_cglTl5A-Ee69cu6-bNESsg" fontName="Segoe UI"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_cglTmJA-Ee69cu6-bNESsg"/>
     <element xmi:type="map:Join" href="resource.map#_cgZGUJA-Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cglTmZA-Ee69cu6-bNESsg" x="379" y="193"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cglTmZA-Ee69cu6-bNESsg" x="361" y="212"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_A3IWM5A8Ee69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#_A1f-gJA8Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map$name=DWH_CLIENT?"/>

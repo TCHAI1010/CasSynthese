@@ -7,7 +7,7 @@
     <field id="_Spi-AZAzEe69cu6-bNESsg" fullAlias="CLE_COMPTE" name="CLE_COMPTE" ref="resource.md#_jzZjQJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CLE_COMPTE?" updateKey="true"/>
     <field id="_Spi-ApAzEe69cu6-bNESsg" fullAlias="STATUS" name="STATUS" ref="resource.md#_jzZjRpAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?"/>
     <field id="_Spi-BpAzEe69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_jzfp8ZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
-    <constraint id="_Spi-B5AzEe69cu6-bNESsg" name="FK_ID_FICHIER" ref="resource.md#_unDBIJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER?" reject="true"/>
+    <field id="_NsEx15XuEe6SOL3_RBRvvg" name="ACT" ref="resource.md#_0kIAQ5WkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
     <constraint id="_Spi-CJAzEe69cu6-bNESsg" name="PK_CLE_COMPTE" ref="resource.md#_jzfp95AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_COMPTE?" reject="true"/>
   </datastore>
   <datastore id="_TkrJgJAzEe69cu6-bNESsg" alias="DWH_COMPTE" control="true" dataset="_TkxQLpAzEe69cu6-bNESsg" ref="resource.md#_kNAccZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_COMPTE?" subExpression="[A]">
@@ -54,6 +54,8 @@
     <constraint id="_TkxQI5AzEe69cu6-bNESsg" name="FK_CLE_COMPTE_DWH" ref="resource.md#_kp2wgJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_COMPTE_DWH?" reject="true"/>
     <constraint id="_TkxQJJAzEe69cu6-bNESsg" name="PK_SID_COMPTE_DWH" ref="resource.md#_kSyUUJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_COMPTE_DWH?" reject="false"/>
     <constraint id="_TkxQJZAzEe69cu6-bNESsg" name="FK_ID_FICHIER_DWH" ref="resource.md#_kp2whJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER_DWH?" reject="true"/>
+    <constraint id="_nIkaUZXuEe6SOL3_RBRvvg" name="Type_ligne" ref="resource.md#_HYwoAZWeEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Type_ligne?" reject="true"/>
+    <constraint id="_nIkaUpXuEe6SOL3_RBRvvg" name="Status" ref="resource.md#_ANOHAZWhEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
     <setDescriptor id="_UnEaoJAzEe69cu6-bNESsg" label="A"/>
   </datastore>
   <template id="_UnEauZAzEe69cu6-bNESsg" name="I_DWH_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_TkrJgJAzEe69cu6-bNESsg"/>

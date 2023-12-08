@@ -165,7 +165,7 @@
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DUH_RJAmEe69cu6-bNESsg" x="470" y="90"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_btw-wYU2Ee6BKsDnQj9IRA"/>
-  <element xmi:type="map:Map" href="resource.map#_btbAgIU2Ee6BKsDnQj9IRA?fileId=_btbAgIU2Ee6BKsDnQj9IRA$type=map$name=Init?"/>
+  <element xmi:type="map:Map" href="resource.map#_btbAgIU2Ee6BKsDnQj9IRA?fileId=_btbAgIU2Ee6BKsDnQj9IRA$type=map$name=INIT?"/>
   <edges xmi:type="notation:Edge" xmi:id="_GE42s5AmEe69cu6-bNESsg" type="targetLink" source="_DUH_Q5AmEe69cu6-bNESsg" target="_cd9sw4U2Ee6BKsDnQj9IRA">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GE42tJAmEe69cu6-bNESsg" points="[-82, 9, 290, -30]$[-284, 30, 88, -9]"/>
