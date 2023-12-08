@@ -75,6 +75,7 @@
     <constraint id="_BuKr4ZA8Ee69cu6-bNESsg" name="FK_CLE_CLIENT_DWH" ref="resource.md#_kr-3cJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT_DWH?" reject="false"/>
     <constraint id="_BuKr4pA8Ee69cu6-bNESsg" name="FK_SID_COMPTE_DWH" ref="resource.md#_kr-QYJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_COMPTE_DWH?" reject="false"/>
     <constraint id="_BuKr45A8Ee69cu6-bNESsg" name="PK_SID_CLIENT" ref="resource.md#_kpQ6oJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT?" reject="false"/>
+    <constraint id="_QS0qQJXxEe6y4uGH1zGLPg" name="compte" ref="resource.md#_Jqkj4ZXxEe6y4uGH1zGLPg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=compte?" reject="true"/>
     <setDescriptor id="_ENnw4JA8Ee69cu6-bNESsg" label="A"/>
   </datastore>
   <datastore id="_CD1Z4JA8Ee69cu6-bNESsg" alias="SAS_CLIENT" dataset="_bcxtRZA-Ee69cu6-bNESsg" ref="resource.md#_jfbeYZAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_CLIENT?">
@@ -201,14 +202,14 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_bdA9zpA-Ee69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_bcxtMJA-Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bdA9wZA-Ee69cu6-bNESsg" x="370" y="311"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bdA9wZA-Ee69cu6-bNESsg" x="492" y="342"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_cglTlZA-Ee69cu6-bNESsg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_cglTlpA-Ee69cu6-bNESsg"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_cglTl5A-Ee69cu6-bNESsg" fontName="Segoe UI"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_cglTmJA-Ee69cu6-bNESsg"/>
     <element xmi:type="map:Join" href="resource.map#_cgZGUJA-Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cglTmZA-Ee69cu6-bNESsg" x="361" y="212"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cglTmZA-Ee69cu6-bNESsg" x="380" y="285"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_A3IWM5A8Ee69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#_A1f-gJA8Ee69cu6-bNESsg?fileId=_A1f-gJA8Ee69cu6-bNESsg$type=map$name=DWH_CLIENT?"/>

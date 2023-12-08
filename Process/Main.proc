@@ -96,7 +96,11 @@ le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
   <actionCode id="1df17335-a57a-4c02-a28f-d0a0862ca688" isBeginAction="false" name="EmptyAction" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.EmptyActionCodeI">
     <link id="e49a1359-b50d-40fa-a5ce-8ed076062cbb" executionType="OK" generationType="OK_KO" mandatory="1" targetId="985ca050-6641-4e5e-b347-d6b43c2fc9b3"/>
   </actionCode>
-  <actionCode id="deacb2f3-bb02-4d00-97b6-6f199cc51222" isBeginAction="false" name="EmptyAction (2)" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.EmptyActionCodeI"/>
+  <actionCode id="deacb2f3-bb02-4d00-97b6-6f199cc51222" isBeginAction="false" name="EmptyAction (2)" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.EmptyActionCodeI">
+    <link id="e3494dfa-2d86-42ce-881a-62e20527052d" executionType="OK" generationType="OK_KO" mandatory="1" targetId="e1455dfb-2d93-4c0e-822f-29f33a36c2c7"/>
+    <link id="9515ab63-c772-4390-aa23-e51496b5bfad" executionType="OK" generationType="OK_KO" mandatory="1" targetId="2c74f0af-9371-438a-878b-10eb1570ddaa"/>
+    <link id="d6d4db1f-6e2f-408e-8312-6e5959694837" executionType="OK" generationType="OK_KO" mandatory="1" targetId="9239570f-0889-40c3-ac3b-349bd666d741"/>
+  </actionCode>
   <actionProcessRef id="c48189a1-97d3-47b2-89a5-4c63fbf1a7c4" isBeginAction="false" name="Init" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_btbAgIU2Ee6BKsDnQj9IRA?fileId=_btbAgIU2Ee6BKsDnQj9IRA$type=map$name=INIT?">
     <link id="adc5e4e2-6d8b-4183-8667-1ddc2fb4e9af" executionType="OK" generationType="OK_KO" mandatory="1" targetId="9c562704-2478-4e92-b1f4-2565f9a32c06"/>
     <link id="7715c429-0b56-4b73-b95f-f9a637d5d817" executionType="KO" generationType="OK_KO" mandatory="1" targetId="389e1b67-4edb-46c8-976b-aa7608d38aa7"/>
@@ -138,6 +142,9 @@ le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
   <actionProcessRef id="7f8249e3-911a-4c28-b050-97ee48390120" isBeginAction="false" name="DWH_TEL" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_PfUAMJA_Ee69cu6-bNESsg?fileId=_PfUAMJA_Ee69cu6-bNESsg$name=DWH_TEL$type=map?">
     <link id="e96f5952-2542-4447-8529-c39c363bbbd7" executionType="OK" generationType="OK_KO" mandatory="1" targetId="deacb2f3-bb02-4d00-97b6-6f199cc51222"/>
   </actionProcessRef>
+  <actionProcessRef id="e1455dfb-2d93-4c0e-822f-29f33a36c2c7" isBeginAction="false" name="DELETE DWH_ADRESSE" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_Z7j0MJXzEe6y4uGH1zGLPg?fileId=_Z7j0MJXzEe6y4uGH1zGLPg$name=DELETE%20DWH_ADRESSE$type=map?"/>
+  <actionProcessRef id="2c74f0af-9371-438a-878b-10eb1570ddaa" isBeginAction="false" name="DELETE DWH_EMAIL" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_mdr4AJXzEe6y4uGH1zGLPg?fileId=_mdr4AJXzEe6y4uGH1zGLPg$name=DELETE%20DWH_EMAIL$type=map?"/>
+  <actionProcessRef id="9239570f-0889-40c3-ac3b-349bd666d741" isBeginAction="false" name="DELETE DWH_TEL" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_LLVhIJXzEe6y4uGH1zGLPg?fileId=_LLVhIJXzEe6y4uGH1zGLPg$name=DELETE%20DWH_TEL$type=map?"/>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.3/notation#/?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3?" xmi:id="_R2jxcIUoEe6BKsDnQj9IRA" type="Proc" measurementUnit="Pixel">
   <children xmi:type="notation:Node" xmi:id="_ks0FwIUoEe6BKsDnQj9IRA" type="2001">
@@ -560,6 +567,54 @@ le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
     <element xmi:type="proc:ActionCode" href="resource.proc#deacb2f3-bb02-4d00-97b6-6f199cc51222?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=EmptyAction%20(2)?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8bspcpXdEe6GyNaUiuph4Q" x="215" y="640"/>
   </children>
+  <children xmi:type="notation:Node" xmi:id="_vA52Q5XzEe6y4uGH1zGLPg" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_vBDnQJXzEe6y4uGH1zGLPg" type="5003"/>
+    <children xmi:type="notation:Node" xmi:id="_vBDnQZXzEe6y4uGH1zGLPg" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vBDnQpXzEe6y4uGH1zGLPg" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vBDnQ5XzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vBDnRJXzEe6y4uGH1zGLPg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_vBDnRZXzEe6y4uGH1zGLPg" type="7004">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vBDnRpXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vBDnR5XzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vBDnSJXzEe6y4uGH1zGLPg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_vA52RJXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionProcessRef" href="resource.proc#e1455dfb-2d93-4c0e-822f-29f33a36c2c7?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=DELETE%20DWH_ADRESSE?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vA52RZXzEe6y4uGH1zGLPg" x="818" y="446"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_vOEvk5XzEe6y4uGH1zGLPg" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_vOEvlpXzEe6y4uGH1zGLPg" type="5003"/>
+    <children xmi:type="notation:Node" xmi:id="_vOEvl5XzEe6y4uGH1zGLPg" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vOEvmJXzEe6y4uGH1zGLPg" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vOEvmZXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vOEvmpXzEe6y4uGH1zGLPg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_vOEvm5XzEe6y4uGH1zGLPg" type="7004">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vOEvnJXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vOEvnZXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vOEvnpXzEe6y4uGH1zGLPg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_vOEvlJXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionProcessRef" href="resource.proc#2c74f0af-9371-438a-878b-10eb1570ddaa?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=DELETE%20DWH_EMAIL?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vOEvlZXzEe6y4uGH1zGLPg" x="805" y="526"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_vcgNI5XzEe6y4uGH1zGLPg" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_vcgNJpXzEe6y4uGH1zGLPg" type="5003"/>
+    <children xmi:type="notation:Node" xmi:id="_vcgNJ5XzEe6y4uGH1zGLPg" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vcgNKJXzEe6y4uGH1zGLPg" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vcgNKZXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vcgNKpXzEe6y4uGH1zGLPg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_vcgNK5XzEe6y4uGH1zGLPg" type="7004">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vcgNLJXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vcgNLZXzEe6y4uGH1zGLPg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vcgNLpXzEe6y4uGH1zGLPg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_vcgNJJXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionProcessRef" href="resource.proc#9239570f-0889-40c3-ac3b-349bd666d741?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=DELETE%20DWH_TEL?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vcgNJZXzEe6y4uGH1zGLPg" x="710" y="591"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_R2jxcYUoEe6BKsDnQj9IRA"/>
   <element xmi:type="proc:ActionProcess" href="resource.proc#529ce7ad-7c20-4cb5-b771-c082d9dcf9e3?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc$name=Main?"/>
   <edges xmi:type="notation:Edge" xmi:id="_OtykgIU6Ee6BKsDnQj9IRA" type="4001" source="_OdooooU6Ee6BKsDnQj9IRA" target="_ks0FwIUoEe6BKsDnQj9IRA">
@@ -790,6 +845,28 @@ le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
     <element xmi:type="proc:Link" href="resource.proc#e96f5952-2542-4447-8529-c39c363bbbd7?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-XzJw5XdEe6GyNaUiuph4Q" points="[-10, 20, 101, -207]$[-109, 205, 2, -22]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-Xzw0JXdEe6GyNaUiuph4Q" id="(0.3979591836734694,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_v7DKUJXzEe6y4uGH1zGLPg" type="4001" source="_8bspcJXdEe6GyNaUiuph4Q" target="_vA52Q5XzEe6y4uGH1zGLPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_v7DKUZXzEe6y4uGH1zGLPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_v7DKUpXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#e3494dfa-2d86-42ce-881a-62e20527052d?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v7DKU5XzEe6y4uGH1zGLPg" points="[88, -32, -555, 198]$[645, -238, 2, -8]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v7EYcJXzEe6y4uGH1zGLPg" id="(0.4603174603174603,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v7EYcZXzEe6y4uGH1zGLPg" id="(0.5212765957446809,0.1951219512195122)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_wQP-QJXzEe6y4uGH1zGLPg" type="4001" source="_8bspcJXdEe6GyNaUiuph4Q" target="_vOEvk5XzEe6y4uGH1zGLPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_wQP-QZXzEe6y4uGH1zGLPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_wQP-QpXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#9515ab63-c772-4390-aa23-e51496b5bfad?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wQP-Q5XzEe6y4uGH1zGLPg" points="[91, -21, -526, 117]$[615, -158, -2, -20]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wQQlUJXzEe6y4uGH1zGLPg" id="(0.4365079365079365,1.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_w3sYwJXzEe6y4uGH1zGLPg" type="4001" source="_8bspcJXdEe6GyNaUiuph4Q" target="_vcgNI5XzEe6y4uGH1zGLPg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_w3sYwZXzEe6y4uGH1zGLPg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_w3sYwpXzEe6y4uGH1zGLPg" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#d6d4db1f-6e2f-408e-8312-6e5959694837?fileId=529ce7ad-7c20-4cb5-b771-c082d9dcf9e3$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w3sYw5XzEe6y4uGH1zGLPg" points="[90, -12, -425, 61]$[525, -52, 10, 21]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w3s_0JXzEe6y4uGH1zGLPg" id="(0.4444444444444444,1.0)"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>

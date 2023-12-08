@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
 encoding//Mappings/Client.map=UTF-8
+encoding//Mappings/DELETE\ DWH_ADRESSE.map=UTF-8
+encoding//Mappings/DELETE\ DWH_EMAIL.map=UTF-8
+encoding//Mappings/DELETE\ DWH_TEL.map=UTF-8
 encoding//Mappings/DWH_ADRESSE.map=UTF-8
 encoding//Mappings/DWH_CLIENT.map=UTF-8
 encoding//Mappings/DWH_COMPTE.map=UTF-8

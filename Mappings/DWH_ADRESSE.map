@@ -15,8 +15,6 @@
     <field id="_BYTMw5BAEe69cu6-bNESsg" fullAlias="CODE_POSTAL" name="CODE_POSTAL" ref="resource.md#_uW1a7JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CODE_POSTAL?"/>
     <field id="_BYSls5BAEe69cu6-bNESsg" fullAlias="LIGNE_3" name="LIGNE_3" ref="resource.md#_uW0z1pAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=LIGNE_3?"/>
     <field id="_SY1p2pXOEe6KJ9B1NiSMNg" name="ACT" ref="resource.md#_0qGsVpWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
-    <constraint id="_BYTz1JBAEe69cu6-bNESsg" name="FK_CLE_CLIENT3" ref="resource.md#_unj-gJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT3?" reject="true"/>
-    <constraint id="_BYTz1ZBAEe69cu6-bNESsg" name="FK_ID_FICHIER3" ref="resource.md#_unjXcJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3?" reject="true"/>
     <constraint id="_BYTz1pBAEe69cu6-bNESsg" name="PK_CLE_CLIENT3" ref="resource.md#_uW66cJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT3?" reject="true"/>
     <constraint id="_SY1p25XOEe6KJ9B1NiSMNg" name="ACTION" ref="resource.md#_KbHvUZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
     <constraint id="_SY1p3JXOEe6KJ9B1NiSMNg" name="STATUS" ref="resource.md#_SiJg0ZWqEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=STATUS?" reject="true"/>
@@ -116,6 +114,7 @@
     <constraint id="_CCmHAJBAEe69cu6-bNESsg" name="FK_ID_FICHIER0_DWH" ref="resource.md#_kr-QZJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER0_DWH?" reject="true"/>
     <constraint id="_CCmHAZBAEe69cu6-bNESsg" name="FK_CLE_CLIENT_DWH" ref="resource.md#_kr-3cJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT_DWH?" reject="true"/>
     <constraint id="_CCmuAJBAEe69cu6-bNESsg" name="FK_SID_COMPTE_DWH" ref="resource.md#_kr-QYJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_COMPTE_DWH?" reject="true"/>
+    <constraint id="_PcEzNZXyEe6y4uGH1zGLPg" name="compte" ref="resource.md#_Jqkj4ZXxEe6y4uGH1zGLPg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=compte?" reject="true"/>
   </datastore>
   <join id="_HLsHsJBAEe69cu6-bNESsg" location="SRC" left="_CClf4JBAEe69cu6-bNESsg" order="10" right="_BYPiYJBAEe69cu6-bNESsg">
     <expression>DWH_CLIENT.CLE_CLIENT = SAS_ADRESSE.CLE_CLIENT</expression>
@@ -188,6 +187,13 @@
     <element xmi:type="map:Datastore" href="resource.map#_BpfqcJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BplKAZBAEe69cu6-bNESsg" x="1133" y="105"/>
   </children>
+  <children xmi:type="notation:Node" xmi:id="_HL7YQJBAEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HL7YQZBAEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HL7YQpBAEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_HL7YQ5BAEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_HLsHsJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL7YRJBAEe69cu6-bNESsg" x="468" y="330"/>
+  </children>
   <children xmi:type="notation:Shape" xmi:id="_CCpxUJBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_CCpxUpBAEe69cu6-bNESsg" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_CCpxU5BAEe69cu6-bNESsg" type="5007"/>
@@ -206,14 +212,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_CCqYZJBAEe69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_CClf4JBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CCpxUZBAEe69cu6-bNESsg" x="707" y="311"/>
-  </children>
-  <children xmi:type="notation:Node" xmi:id="_HL7YQJBAEe69cu6-bNESsg" type="2005">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HL7YQZBAEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_HL7YQpBAEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_HL7YQ5BAEe69cu6-bNESsg"/>
-    <element xmi:type="map:Join" href="resource.map#_HLsHsJBAEe69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HL7YRJBAEe69cu6-bNESsg" x="554" y="263"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CCpxUZBAEe69cu6-bNESsg" x="622" y="234"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="__c0XgZA_Ee69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#__ceZQJA_Ee69cu6-bNESsg?fileId=__ceZQJA_Ee69cu6-bNESsg$type=map$name=DWH_ADRESSE?"/>

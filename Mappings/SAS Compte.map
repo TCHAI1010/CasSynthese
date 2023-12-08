@@ -37,9 +37,6 @@
       </expression>
     </field>
     <constraint id="_PHyIcJAoEe69cu6-bNESsg" name="PK_CLE_COMPTE" ref="resource.md#_jzfp95AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_COMPTE?" reject="true"/>
-    <constraint id="_Y1jHoJWhEe6KJ9B1NiSMNg" name="Type_ligne" ref="resource.md#_HYwoAZWeEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Type_ligne?" reject="true"/>
-    <constraint id="_Y1jHoZWhEe6KJ9B1NiSMNg" name="Status" ref="resource.md#_ANOHAZWhEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
-    <constraint id="_x12KEJWmEe6KJ9B1NiSMNg" name="Action" ref="resource.md#_pxR2sZWmEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Action?" reject="true"/>
     <setDescriptor id="_II_CcIU0Ee6BKsDnQj9IRA" label="A"/>
   </datastore>
   <datastore id="_6MNlkIUzEe6BKsDnQj9IRA" alias="SAS_FILESRC" dataset="_J9At0ZXoEe6SOL3_RBRvvg" ref="resource.md#_j44gNJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=SAS_FILESRC?" subExpression="">

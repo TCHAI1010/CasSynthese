@@ -44,8 +44,6 @@
     <field id="_TXYBdpBAEe69cu6-bNESsg" fullAlias="DATE_IMPORT" name="DATE_IMPORT" ref="resource.md#_j4uvR5AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DATE_IMPORT?"/>
     <field id="_UzfHPZXOEe6KJ9B1NiSMNg" name="ACT" ref="resource.md#_0wYTjZWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
     <constraint id="_TXeIEJBAEe69cu6-bNESsg" name="PK_CLE_CLIENT2" ref="resource.md#_j44gMJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT2?" reject="true"/>
-    <constraint id="_TXeIEZBAEe69cu6-bNESsg" name="FK_ID_FICHIER2" ref="resource.md#_uoE74JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER2?" reject="true"/>
-    <constraint id="_TXeIEpBAEe69cu6-bNESsg" name="FK_CLE_CLIENT2" ref="resource.md#_uoFi8JAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT2?" reject="true"/>
     <constraint id="_TXeIE5BAEe69cu6-bNESsg" name="REJET_EMAIL" ref="resource.md#_ohz5gZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=REJET_EMAIL?" reject="true"/>
     <constraint id="_UzfHPpXOEe6KJ9B1NiSMNg" name="action" ref="resource.md#_YI-xAZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=action?" reject="true"/>
     <constraint id="_UzfHP5XOEe6KJ9B1NiSMNg" name="Status" ref="resource.md#_QKydUZWpEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=Status?" reject="true"/>
@@ -69,6 +67,7 @@
     <constraint id="_T24oAZBAEe69cu6-bNESsg" name="FK_ID_FICHIER0_DWH" ref="resource.md#_kr-QZJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER0_DWH?" reject="true"/>
     <constraint id="_T24oApBAEe69cu6-bNESsg" name="FK_CLE_CLIENT_DWH" ref="resource.md#_kr-3cJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT_DWH?" reject="true"/>
     <constraint id="_T24oA5BAEe69cu6-bNESsg" name="FK_SID_COMPTE_DWH" ref="resource.md#_kr-QYJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_COMPTE_DWH?" reject="true"/>
+    <constraint id="_y2LJ9JXxEe6y4uGH1zGLPg" name="compte" ref="resource.md#_Jqkj4ZXxEe6y4uGH1zGLPg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=compte?" reject="true"/>
   </datastore>
   <join id="_adM0oJBAEe69cu6-bNESsg" location="SRC" left="_T24n8JBAEe69cu6-bNESsg" order="10" right="_TXYBcJBAEe69cu6-bNESsg">
     <expression>DWH_CLIENT.CLE_CLIENT = SAS_EMAIL.CLE_CLIENT</expression>
@@ -93,26 +92,6 @@
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_SOiKEJBAEe69cu6-bNESsg" type="Map" measurementUnit="Pixel">
-  <children xmi:type="notation:Shape" xmi:id="_T2-urpBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-usJBAEe69cu6-bNESsg" type="5005"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-usZBAEe69cu6-bNESsg" type="5007"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-uspBAEe69cu6-bNESsg" type="7003"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-us5BAEe69cu6-bNESsg" type="7009"/>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_T2-utJBAEe69cu6-bNESsg" type="7004">
-      <styles xmi:type="notation:SortingStyle" xmi:id="_T2-utZBAEe69cu6-bNESsg"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_T2-utpBAEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-ut5BAEe69cu6-bNESsg" type="5009">
-      <styles xmi:type="notation:DrawerStyle" xmi:id="_T2-uuJBAEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:DecorationNode" xmi:id="_T2-uuZBAEe69cu6-bNESsg" type="7005">
-      <styles xmi:type="notation:SortingStyle" xmi:id="_T2-uupBAEe69cu6-bNESsg"/>
-      <styles xmi:type="notation:FilteringStyle" xmi:id="_T2-uu5BAEe69cu6-bNESsg"/>
-    </children>
-    <children xmi:type="notation:BasicCompartment" xmi:id="_T2-uvJBAEe69cu6-bNESsg" type="7007"/>
-    <element xmi:type="map:Datastore" href="resource.map#_T24n8JBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2-ur5BAEe69cu6-bNESsg" x="709" y="302"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_TXeIJpBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_TXeIKJBAEe69cu6-bNESsg" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_TXeIKZBAEe69cu6-bNESsg" type="5007"/>
@@ -133,13 +112,6 @@
     <element xmi:type="map:Datastore" href="resource.map#_TXYBcJBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TXeIJ5BAEe69cu6-bNESsg" x="218" y="93"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_adWlpZBAEe69cu6-bNESsg" type="2005">
-    <styles xmi:type="notation:DescriptionStyle" xmi:id="_adWlppBAEe69cu6-bNESsg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_adWlp5BAEe69cu6-bNESsg" fontName="Segoe UI"/>
-    <styles xmi:type="notation:FillStyle" xmi:id="_adWlqJBAEe69cu6-bNESsg"/>
-    <element xmi:type="map:Join" href="resource.map#_adM0oJBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_adWlqZBAEe69cu6-bNESsg" x="560" y="248"/>
-  </children>
   <children xmi:type="notation:Shape" xmi:id="_TBhtWZBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_TBhtW5BAEe69cu6-bNESsg" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_TBhtXJBAEe69cu6-bNESsg" type="5007"/>
@@ -159,6 +131,33 @@
     <children xmi:type="notation:BasicCompartment" xmi:id="_TBhtZ5BAEe69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_TBhtQJBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TBhtWpBAEe69cu6-bNESsg" x="1093" y="140"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_T2-urpBAEe69cu6-bNESsg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-usJBAEe69cu6-bNESsg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-usZBAEe69cu6-bNESsg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-uspBAEe69cu6-bNESsg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-us5BAEe69cu6-bNESsg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_T2-utJBAEe69cu6-bNESsg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_T2-utZBAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_T2-utpBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-ut5BAEe69cu6-bNESsg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_T2-uuJBAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_T2-uuZBAEe69cu6-bNESsg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_T2-uupBAEe69cu6-bNESsg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_T2-uu5BAEe69cu6-bNESsg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_T2-uvJBAEe69cu6-bNESsg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_T24n8JBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T2-ur5BAEe69cu6-bNESsg" x="538" y="328"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_adWlpZBAEe69cu6-bNESsg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_adWlppBAEe69cu6-bNESsg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_adWlp5BAEe69cu6-bNESsg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_adWlqJBAEe69cu6-bNESsg"/>
+    <element xmi:type="map:Join" href="resource.map#_adM0oJBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_adWlqZBAEe69cu6-bNESsg" x="392" y="281"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_SOiKEZBAEe69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#_SOMy4JBAEe69cu6-bNESsg?fileId=_SOMy4JBAEe69cu6-bNESsg$type=map$name=DWH_EMAIL?"/>

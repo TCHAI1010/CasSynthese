@@ -9,9 +9,7 @@
     <field id="_QkL9lZA_Ee69cu6-bNESsg" fullAlias="TYPE" name="TYPE" ref="resource.md#_kBr25pAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=TYPE?" updateKey="true"/>
     <field id="_QkL9lJA_Ee69cu6-bNESsg" fullAlias="FAVORI" name="FAVORI" ref="resource.md#_kBr24JAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FAVORI?"/>
     <field id="_Q5q8yZXOEe6KJ9B1NiSMNg" name="ACT" ref="resource.md#_019XKZWkEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACT?"/>
-    <constraint id="_QkL9mJA_Ee69cu6-bNESsg" name="FK_CLE_CLIENT4" ref="resource.md#_uovqRJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT4?" reject="true"/>
     <constraint id="_QkL9mZA_Ee69cu6-bNESsg" name="PK_CLE_CLIENT4" ref="resource.md#_kBr295AlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_CLE_CLIENT4?" reject="true"/>
-    <constraint id="_QkL9mpA_Ee69cu6-bNESsg" name="FK_ID_FICHIER4" ref="resource.md#_uovqQJAnEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER4?" reject="true"/>
     <constraint id="_Q5q8ypXOEe6KJ9B1NiSMNg" name="favori" ref="resource.md#_3iOr0ZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=favori?" reject="true"/>
     <constraint id="_Q5q8y5XOEe6KJ9B1NiSMNg" name="ACTION" ref="resource.md#_IvDZoZWrEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=ACTION?" reject="true"/>
     <constraint id="_Q5q8zJXOEe6KJ9B1NiSMNg" name="format telephone" ref="resource.md#_bSLhIZWsEe6KJ9B1NiSMNg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=format%20telephone?" reject="true"/>
@@ -60,9 +58,10 @@
         <expression>DWH_CLIENT.SID_CLIENT</expression>
       </expression>
     </field>
-    <constraint id="_RkBC6pA_Ee69cu6-bNESsg" name="PK_SID_CLIENT_TYPE" ref="resource.md#_kY6KcJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT_TYPE?" reject="false"/>
+    <constraint id="_RkBC6pA_Ee69cu6-bNESsg" name="PK_SID_CLIENT_TYPE" ref="resource.md#_kY6KcJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=PK_SID_CLIENT_TYPE?" reject="true"/>
     <constraint id="_RkBC65A_Ee69cu6-bNESsg" name="FK_SID_CLIENT3_DWH" ref="resource.md#_kqZjEJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_CLIENT3_DWH?" reject="true"/>
-    <constraint id="_RkBC7JA_Ee69cu6-bNESsg" name="FK_ID_FICHIER3_DWH" ref="resource.md#_kqaKIJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3_DWH?" reject="false"/>
+    <constraint id="_RkBC7JA_Ee69cu6-bNESsg" name="FK_ID_FICHIER3_DWH" ref="resource.md#_kqaKIJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER3_DWH?" reject="true"/>
+    <constraint id="_x9CsyZXyEe6y4uGH1zGLPg" name="client" ref="resource.md#_uzpS05XyEe6y4uGH1zGLPg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=client?" reject="true"/>
     <setDescriptor id="_W3Na0JA_Ee69cu6-bNESsg" label="A"/>
   </datastore>
   <datastore id="_SMy6IJA_Ee69cu6-bNESsg" alias="DWH_CLIENT" dataset="_SM-gUJA_Ee69cu6-bNESsg" ref="resource.md#_kj22MZAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=DWH_CLIENT?">
@@ -84,6 +83,7 @@
     <constraint id="_SM8rJJA_Ee69cu6-bNESsg" name="FK_ID_FICHIER0_DWH" ref="resource.md#_kr-QZJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_ID_FICHIER0_DWH?" reject="true"/>
     <constraint id="_SM8rJZA_Ee69cu6-bNESsg" name="FK_CLE_CLIENT_DWH" ref="resource.md#_kr-3cJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_CLE_CLIENT_DWH?" reject="true"/>
     <constraint id="_SM8rJpA_Ee69cu6-bNESsg" name="FK_SID_COMPTE_DWH" ref="resource.md#_kr-QYJAtEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=FK_SID_COMPTE_DWH?" reject="true"/>
+    <constraint id="_x9Cs4JXyEe6y4uGH1zGLPg" name="compte" ref="resource.md#_Jqkj4ZXxEe6y4uGH1zGLPg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=compte?" reject="true"/>
   </datastore>
   <join id="_ez8n4JA_Ee69cu6-bNESsg" location="SRC" left="_QkF28JA_Ee69cu6-bNESsg" order="10" right="_SMy6IJA_Ee69cu6-bNESsg">
     <expression>SAS_TEL.CLE_CLIENT = DWH_CLIENT.CLE_CLIENT</expression>
@@ -168,14 +168,14 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_SM_HeJA_Ee69cu6-bNESsg" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_SMy6IJA_Ee69cu6-bNESsg?fileId=_PfUAMJA_Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SM_Ha5A_Ee69cu6-bNESsg" x="530" y="263" height="254"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SM_Ha5A_Ee69cu6-bNESsg" x="423" y="300" height="254"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_e0IOEJA_Ee69cu6-bNESsg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_e0IOEZA_Ee69cu6-bNESsg"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_e0IOEpA_Ee69cu6-bNESsg" fontName="Segoe UI"/>
     <styles xmi:type="notation:FillStyle" xmi:id="_e0IOE5A_Ee69cu6-bNESsg"/>
     <element xmi:type="map:Join" href="resource.map#_ez8n4JA_Ee69cu6-bNESsg?fileId=_PfUAMJA_Ee69cu6-bNESsg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e0IOFJA_Ee69cu6-bNESsg" x="429" y="227"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e0IOFJA_Ee69cu6-bNESsg" x="203" y="417"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_PfrMkZA_Ee69cu6-bNESsg"/>
   <element xmi:type="map:Map" href="resource.map#_PfUAMJA_Ee69cu6-bNESsg?fileId=_PfUAMJA_Ee69cu6-bNESsg$type=map$name=DWH_TEL?"/>
