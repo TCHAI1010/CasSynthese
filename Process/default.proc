@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:process xmlns:proc="http://www.example.org/proc" id="6221a62f-1d50-4de8-8100-f07194686d16">
+  <actionCode id="4ac0ac3e-c798-4cf5-82f2-1e1cb9767114" isBeginAction="false" name="SqlOperation" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.JdbcActionCodeI">
+    <metaDataLink id="485a9027-fcaf-4054-9117-01cc353802e6" name="CSG1_ORA2" target="resource.md#_hZDAsJAlEe69cu6-bNESsg?fileId=_CHAaQIUmEe6BKsDnQj9IRA$type=md$name=CSG1_ORA2?"/>
+    <parameter id="d8fe9027-4266-4066-ac88-93a2bfcefa78" name="SQL_CONNECTION" type="String"/>
+    <parameter id="644782b4-c4d7-44af-bb85-aa84b48ca140" name="SQL_ACTION_TYPE" type="String" value="DDL_DML"/>
+    <parameter id="34022667-360e-4362-85fd-14fe6707b14a" name="SQL_MULTI_QUERYS" type="Boolean" value="true"/>
+    <code>delete from dwh_email c&#xD;
+where c.sid_client in (select b.sid_client&#xD;
+                        from sas_email a&#xD;
+                            inner join dwh_client b&#xD;
+                                on a.cle_client = b.cle_client&#xD;
+                        where a.act = 'S')&#xD;
+                        &#xD;
+&#xD;
+</code>
+  </actionCode>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.3/notation#/?fileId=6221a62f-1d50-4de8-8100-f07194686d16?" xmi:id="_2T020JXeEe6GyNaUiuph4Q" type="Proc" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_3HtK0JXeEe6GyNaUiuph4Q" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_3HtK05XeEe6GyNaUiuph4Q" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_3HtK1JXeEe6GyNaUiuph4Q" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_3HtK1ZXeEe6GyNaUiuph4Q"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_3HtK1pXeEe6GyNaUiuph4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_3HtK15XeEe6GyNaUiuph4Q"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_3HtK2JXeEe6GyNaUiuph4Q" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_IPZrkJXfEe6GyNaUiuph4Q" type="3002">
+        <element xmi:type="proc:MetaDataLink" href="resource.proc#485a9027-fcaf-4054-9117-01cc353802e6?fileId=6221a62f-1d50-4de8-8100-f07194686d16$type=proc?"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_IPZrkZXfEe6GyNaUiuph4Q"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_3HtK2ZXeEe6GyNaUiuph4Q"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_3HtK2pXeEe6GyNaUiuph4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_3HtK25XeEe6GyNaUiuph4Q"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_3HtK0ZXeEe6GyNaUiuph4Q" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionCode" href="resource.proc#4ac0ac3e-c798-4cf5-82f2-1e1cb9767114?fileId=6221a62f-1d50-4de8-8100-f07194686d16$type=proc$name=SqlOperation?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3HtK0pXeEe6GyNaUiuph4Q" x="245" y="115"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_2T020ZXeEe6GyNaUiuph4Q"/>
+  <element xmi:type="proc:ActionProcess" href="resource.proc#6221a62f-1d50-4de8-8100-f07194686d16?fileId=6221a62f-1d50-4de8-8100-f07194686d16$type=proc$name=default?"/>
+</notation:Diagram>
+]]></diagram>
+</proc:process>

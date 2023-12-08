@@ -140,7 +140,9 @@
   <filter id="_YlmRQJApEe69cu6-bNESsg" location="SRC">
     <expression>TRANSCO_qualite.TYPE = 'QUALITE'</expression>
   </filter>
-  <template id="_6wiGIZAoEe69cu6-bNESsg" name="I_SAS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_6C8AMJAoEe69cu6-bNESsg"/>
+  <template id="_6wiGIZAoEe69cu6-bNESsg" name="I_SAS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_6C8AMJAoEe69cu6-bNESsg">
+    <parameter id="_H6dIkJXaEe6GyNaUiuph4Q" name="truncateTargetTable" value="true"/>
+  </template>
   <template id="_9BMEVZWqEe6KJ9B1NiSMNg" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_6C8AMJAoEe69cu6-bNESsg"/>
   <dataSet id="_6DARoJAoEe69cu6-bNESsg">
     <container>_6C8AMJAoEe69cu6-bNESsg</container>
